@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Jasmine Su</title>
+        <meta name="description" content="蘇庭萱的作品集 Portfolio of Jasmine Su">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- 我是Header -->
+        <nav class="navbar navbar-expand-lg navbar-light" style="padding: 16px; margin-bottom: 3em; background-color: #F5F5F5;">
+            <div class="container">
+              <a class="navbar-brand" href="index.html" style="font-family: Montserrat; font-size: 24px; font-weight: 700; color: #3C3C3C">Jasmine Su
+                </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        
+        <!-- 我是內容 -->
+        <div class="container">           
+            <!-- 我是表頭 -->
+            <div class="row">
+                <div class="col page-title-wrap">
+                    <div class="wrap page-title">Portfolio</div>
+                </div>
+            </div>
+            
+            <!-- 我是內容 -->
+            <div class="project">
+                <div class="row">
+                    <div class="col-12">
+                        <img class="img-project" src="img/project-eat/eat-main.jpg">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h2>一起吃：食物分享平台</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <p>「一起吃」是一個希望以食物分享來解決都市中剩食問題的服務設計專案。此專案為團隊作業，我在團隊裡負責的有前期資料蒐集與分析、訪談、整理服務藍圖與顧客旅程，以及APP和機台的介面流程。</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h3>設計概念</h3>
+                        <p> 「一起吃」是一個包括了行動裝置APP和實際櫃體的食物分享平台；是為了減少食物的浪費，以及加強人與人之間的連結而設立。</p>
+                        <p>在台灣，一年被浪費的食物有275萬公噸，我們希望人們透過這個平台，將自己所不需要的、但依然可以被食用的食材分享出去，而透過此平台得到食物的人，也能將這份心意繼續傳達下去；除了減少不必要的食物浪費，還能藉由食物的傳遞增加個體之間的互動，解決無緣社會的問題。</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h3>現有問題分析</h3>
+                    </div>
+                    
+                    <div class="col-12 col-md-4">
+                        <div class="project-card img-project">
+                            <img src="img/project-eat/problem_home@2x.png" class="img-project" style="margin-bottom: 1em;">
+                            <h4>A. 家中</h4>
+                            <p>1. 冰箱、儲藏櫃空間不足<br>2. 食材放在冰箱過期發臭<br>3. 廚餘發臭、引來蚊蟲<br></p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="project-card img-project">
+                            <img src="img/project-eat/problem_trash@2x.png" class="img-project" style="margin-bottom: 1em;">
+                            <h4>B. 廚餘</h4>
+                            <p>1. 生/熟廚餘需分開，但成效不彰<br>2. 運送廚餘成本高，但燃燒破壞環境<br>3. 一般家庭單日廚餘少，常與垃圾一起丟</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="project-card img-project">
+                            <img src="img/project-eat/problem_market@2x.png" class="img-project" style="margin-bottom: 1em;">
+                            <h4>C. 超市</h4>
+                            <p>1. 較少小包裝的東西，就算有也較貴<br>2. 即期食品較便宜</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-12">
+                        <h3>目標族群定義</h3>
+                    </div>
+                    <!--<div class="col-12 col-md-3" style="border: solid;">
+                        <div class="row justify-content-center icon-list">
+                        <div class="col-3 col-md-6" style="border: solid;">
+                            <img src="img/project-eat/icon_city@2x.png" class="img-project">
+                        </div>
+                        <div class="col-9 col-md-12" style="border: solid;">
+                            <p>1. 居住在都市</p>
+                        </div>
+                        </div>
+                    </div>-->
+                    <div class="col-6 col-md-3">
+                        <div class="project-card img-project">
+                            <img src="img/project-eat/icon_city@2x.png" class="img-project project-card-icon">
+                            <p class="thumbnail-text">1. 居住在都市</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="project-card img-project">
+                            <img src="img/project-eat/icon_man@2x.png" class="img-project project-card-icon">
+                            <p class="thumbnail-text">2. 家庭成員數少，可能一或二人住</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="project-card img-project">
+                            <img src="img/project-eat/icon_tired@2x.png" class="img-project project-card-icon">
+                            <p class="thumbnail-text">3. 工作忙碌且疲憊，需要心靈寄託</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="project-card img-project">
+                            <img src="img/project-eat/icon_groceries@2x.png" class="img-project project-card-icon">
+                            <p class="thumbnail-text">4. 所需食物份量少而難以購買</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h3>訪談</h3>
+                        <p> 我們訪談了4位受訪者，了解他們的作息、內食頻率、食材採買/處理的習慣、與家中人員及社區鄰居的關係。</p>
+                        <h4>訪談結果</h4>
+                        <ol>
+                            <li>購買份量問題：香料、加工食品等少有一人份的小包裝，一餐分量的食材也難以購得；希望能取得少量多樣的食材。</li>
+                            <li>料理時間問題：由於能花在煮飯的時間不多，希望能有快速處理好的食材，或是更快煮好食物的方法。</li>
+                            <li>信任度問題：平時會去有信任感的店家消費，也會較願意與有信任感的人互動或是交換食物。希望有安全可靠的食物來源。</li>
+                            <li>食材存放問題：希望能控管食物保存期限方法，或是提醒食物即將到期的機制，以減少食物和金錢的浪費。</li>
+                            <li>廚餘處理問題：不希望製造出太多廚餘，也覺得應該有更佳的廚餘處理方式，以減少家庭垃圾。</li>
+                        </ol>
+                    </div>
+                    <div class="col-12">
+                        <h4>Point of view</h4>
+                        <table class="table table-bordered">
+                          <thead class="thead-yellow">
+                            <tr>
+                              <th scope="col">Who</th>
+                              <th scope="col">Need</th>
+                              <th scope="col">Why</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>想吃得均衡又多樣的小資女</td>
+                              <td>料理出更多種不同的菜色</td>
+                              <td>因為超市食材種類與份量的限制，而常得做出妥協</td>
+                            </tr>
+                            <tr>
+                              <td>生活費不太多的忙碌學生</td>
+                              <td>簡單且便宜可取得多元食物的方法</td>
+                              <td>想省錢省力，不想多花時間在上面</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h3>價值主張：以食物分享來解決都市中剩食問題</h3>
+                    </div>
+                    <div class="col-12 col-md-12">
+                        <div class="img-overflow" style="margin-bottom: 20px;">
+                            <img src="img/project-eat/value_proposition@2x.png" class="img-chart">
+                        </div>
+                    </div>
+                    <div class="col-12" style="background: #F3D077;">
+                        <h3 style="text-align: center; margin: 40px">Innovation Points:<br>透過網路平台和左鄰右舍交換多餘的食物</h3>
+                    </div>
+                    <div class="col-12 col-md-12">
+                        <div class="img-overflow">
+                            <img src="img/project-eat/innovation_points@2x.png" class="img-chart" style="margin: 60px auto;">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h3>顧客旅程</h3>
+                    </div>
+                    <div class="col-12">
+                        <table class="table table-bordered">
+                          <thead class="thead-yellow">
+                            <tr>
+                                <th scope="col">Giver</th>
+                                <th scope="col">Receiver</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                                <td>
+                                    <p>1. 收到一箱親戚種的馬鈴薯</p>
+                                    <p class="customer-journey-os">「雖然很感謝，但這麼多根本吃不完，好浪費啊」</p>
+                                </td>
+                                <td>
+                                    <p>1. 週末想煮咖哩給女朋友吃，但發現冰箱裡沒有馬鈴薯跟洋蔥</p>
+                                    <p class="customer-journey-os">「我只需要兩人份的馬鈴薯跟洋蔥欸~可是每次一買就一堆吃不完很麻煩。」</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>2. 至「我要給」頁 面登錄提供食材資訊、為食材拍照、登錄可送達櫃點</p>
+                                    <p class="customer-journey-os">「或許有人可以幫我分擔一些馬鈴薯～」</p>
+                                </td>
+                                <td>
+                                    <p>2. 打開「一起吃」搜尋供給市場中有無所需物品</p>
+                                    <p class="customer-journey-os">「來逛逛市場好了」</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>3. 收到訊息有人想要兩顆</p>
+                                    <p class="customer-journey-os">「太好了，可以分出去兩個！」</p>
+                                </td>
+                                <td>
+                                    <p>3. 發現八顆馬鈴薯，提出只想要兩顆的請求</p>
+                                    <p class="customer-journey-os">「喔喔！是馬鈴薯欸，傳訊息請他分我兩顆吧。」</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>4. 與對方約定好禮拜五晚上前放入文山二分享站的櫃子，並收到櫃號</p>
+                                    <p class="customer-journey-os">「等下去超市順便拿去剛剛好。」</p>
+                                </td>
+                                <td>
+                                    <p>4. 與對方約定好禮拜五晚上前放入文山二分享站的櫃子，並收到櫃號</p>
+                                    <p class="customer-journey-os">「禮拜五下班順便去超市的分享站拿剛剛好。」</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>5. 決定來煮咖哩，但沒有洋蔥，決定去超市買</p>
+                                    <p class="customer-journey-os">「超市賣的洋蔥好大一包，會不會吃不完呢…」</p>
+                                </td>
+                                <td>
+                                    <p>5. 找不到洋蔥</p>
+                                    <p class="customer-journey-os">「再來找找看有沒有洋蔥…都沒有欸。」</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>6. 出門前看到有人需要洋蔥，所以可以買大包的了</p>
+                                    <p class="customer-journey-os">「這樣就不用擔心洋蔥吃不完了」</p>
+                                </td>
+                                <td>
+                                    <p>6. 至「我要拿」頁面登錄需求，設定食品標籤，並輸入此需求截止日期至週五晚上</p>
+                                    <p class="customer-journey-os">「不然我來登錄個需求好了，禮拜五晚上去超市的分享站前搞不好就有人認領了，反正沒有的話到時候還可以買。」</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>7. 按下「我要認領」</p>
+                                    <p class="customer-journey-os">「這個好像是剛剛跟我要馬鈴薯的那個人耶，難不成他也要煮咖哩嗎？」</p>
+                                </td>
+                                <td>
+                                    <p>7. 收到有人認領的訊息</p>
+                                    <p class="customer-journey-os">「喔耶！…欸？這好像是剛剛要給我馬鈴薯的同一個人欸，來看看他的個人檔案好了…最常交換的食材是馬鈴薯？難不成他家種馬鈴薯嗎…？」</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>8. 與對方約好禮拜五晚上前放入文山二分享站的櫃子，並收到櫃號</p>
+                                    <p class="customer-journey-os">「就放同一個分享站吧，免得麻煩～」</p>
+                                </td>
+                                <td>
+                                    <p>8. 與對方約定好禮拜五晚上前放入文山二分享站的櫃子，並收到櫃號</p>
+                                    <p class="customer-journey-os">「那就一樣禮拜五晚上文山二吧。」</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>9. 去超市買洋蔥，滿額得到額外代幣；順便把馬鈴薯洋蔥帶去文山二分享站</p>
+                                    <p class="customer-journey-os">「得到代幣了」</p>
+                                </td>
+                                <td>
+                                    <p>9. 滿心期待地等待馬鈴薯和洋蔥</p>
+                                    <p class="customer-journey-os">「不知道煮起來味道如何呢？」</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>10. 用分享站的話筒留言給對方，拉霸得到超市折價券</p>
+                                    <p class="customer-journey-os">「分享出食物還可以得到超市折價券，真是太棒啦！」</p>
+                                </td>
+                                <td>
+                                    <p>10. 收到馬鈴薯與洋蔥已送達分享站的訊息與對方的語音留言</p>
+                                    <p class="customer-journey-os">「今天下班要去拿馬鈴薯跟洋蔥呢～啊！是訊息！他說什麼呢？…喔～原來是他親戚是種有機馬鈴薯的啊！」</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>11. 收到來自對方的代幣</p>
+                                    <p class="customer-journey-os">「喔～又增加了一個代幣」</p>
+                                </td>
+                                <td>
+                                    <p>11. 下班時順便至文山二分享站將馬鈴薯與洋蔥提領出來，在分享站的機器拉霸，但沒抽到超市折價券</p>
+                                    <p class="customer-journey-os">「嗯～馬鈴薯跟洋蔥都看起來很有元氣呢！…登出前來拉個霸吧…啊！差一點！可惡。」</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>12. 煮咖哩來吃，發現親戚種的馬鈴薯超好吃</p>
+                                    <p class="customer-journey-os">「真不愧是我大伯的鄰居的表姊的有機馬鈴薯啊！」</p>
+                                </td>
+                                <td>
+                                    <p>12. 與女朋友共進自己煮的咖哩，發現馬鈴薯超好吃，傳訊告訴分享者「馬鈴薯超好吃！」</p>
+                                    <p class="customer-journey-os">「天啊！神之馬鈴薯！怎麼會這麼好吃啊！我要崇拜給我馬鈴薯的人！來傳訊息跟他分享我的感動…」</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>13. 收到對方的評等五顆星與「馬鈴薯超好吃！」的留言</p>
+                                    <p class="customer-journey-os">「剛剛那個人傳訊息跟我說他也覺得馬鈴薯超好吃，真是太好了！」</p>
+                                </td>
+                                <td>
+                                    <p>13. 至「一起吃」應用程式的歷史交易記錄中，選擇馬鈴薯分享者，評等五顆星</p>
+                                    <p class="customer-journey-os">「我要把他加入我的最愛，還要給他五顆星！」</p>
+                                </td>
+                            </tr>  
+                          </tbody>
+                        </table>
+                    </div>                  
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h3>服務藍圖</h3>
+                    </div>
+                    <div class="col-12">
+                        <div class="img-overflow">
+                            <img src="img/project-eat/service_blueprint.jpg" style="max-height: 680px">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h3>介面設計：手機APP</h3>
+                    </div>
+                    <div class="col-12">
+                        <img src="img/project-eat/eat-app-main@2x.jpg" class="img-project" style="margin-bottom: 60px;">
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <h4>市場頁面</h4>
+                        <p>每成功給出一次食物就能得到一個來自對方的蘋果幣，需要有蘋果幣才能拿取食物</p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <img src="img/project-eat/APP_final-08.jpg" class="img-ui">
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <h4>食物徵求頁面</h4>
+                        <p>市場找不到的食物，可以新增需求</p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <img src="img/project-eat/APP_final-10.jpg" class="img-ui">
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <h4>食物分享上傳</h4>
+                        <p>上傳欲分享的食物資訊及照片；須當場拍攝食物照片上傳以提升信任度</p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <img src="img/project-eat/APP_final-12.jpg" class="img-ui">
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <img src="img/project-eat/APP_final-13.jpg" class="img-ui">
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <img src="img/project-eat/APP_final-14.jpg" class="img-ui">
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <h4>食物分享交易</h4>
+                        <p>交易流程、評價及留言</p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <img src="img/project-eat/APP_final-15.jpg" class="img-ui">
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <img src="img/project-eat/APP_final-16.jpg" class="img-ui">
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <img src="img/project-eat/APP_final-17.jpg" class="img-ui">
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <h4>我的家</h4>
+                        <p>可查看個人資料、交易紀錄等</p>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <img src="img/project-eat/APP_final-03.jpg" class="img-ui">
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="img/project-eat/APP_final-04.jpg" class="img-ui">
+                            </div>
+                            <div class="col-6">
+                                <img src="img/project-eat/APP_final-05.jpg" class="img-ui">
+                            </div>
+                            <div class="col-6">
+                                <img src="img/project-eat/APP_final-06.jpg" class="img-ui">
+                            </div>
+                            <div class="col-6">
+                                <img src="img/project-eat/APP_final-07.jpg" class="img-ui">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-12">
+                        <h3>介面設計：實體交易櫃點</h3>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <h4>實體接觸點</h4>
+                        <p>設置於超市旁或是社區中較易到達處</p>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <img src="img/project-eat/kiosk@2x.png" class="img-project" style="margin-bottom: 60px;">
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <h4>登入頁面</h4>
+                        <p>選擇要放置或拿取食物</p>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <img src="img/project-eat/kiosk-01.jpg" class="img-ui">
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <img src="img/project-eat/kiosk-02.jpg" class="img-ui">
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <h4>給出食物</h4>
+                        <p>使用機台上的話筒錄製留言後，將食物放入指定的櫃子裡</p>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <img src="img/project-eat/kiosk-04.jpg" class="img-ui">
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <img src="img/project-eat/kiosk-06.jpg" class="img-ui">
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <h4>拿取食物</h4>
+                        <p>可收聽給予人的語音訊息，並拿取食物；交易完成後可參加抽獎，獲得超市折價券</p>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <img src="img/project-eat/kiosk-03.jpg" class="img-ui">
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <img src="img/project-eat/kiosk-05.jpg" class="img-ui">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-12">
+                        <h3>Business Model</h3>
+                    </div>
+                    <div class="col-12 col-md-12">
+                        <div class="img-overflow">
+                            <img src="img/project-eat/business%20model@2x.jpg" class="img-chart">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 挖喜footer -->
+            <div class="footer">
+            <div class="container">
+                <div style="margin-bottom: 1.5em;">
+                    <a href="https://www.behance.net/ting_hsuan_su" target="_blank" title="Behance"><img src="img/behance.svg" style="width: 40px; margin: 8px;"></a>
+                    <a href="https://www.linkedin.com/in/ting-hsuan-su/" target="_blank" title="LinkedIn"><img src="img/linkedin.svg" style="width: 40px; margin: 8px"></a>
+                </div>
+                <p style="font-size: 14px; color: #707070;">Copyright &copy; 2020, Ting-Hsuan Su</p>
+                <p style="font-size: 11px; color: #707070;">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+            </div>
+            </div>
+        
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    </body>
+</html>
