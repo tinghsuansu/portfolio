@@ -136,6 +136,11 @@ a:hover {
     font-weight: 700;
 }
 
+.col-margin-bottom {
+    margin-bottom: 24px
+}
+
+
 .project > .row {
     margin-bottom: 60px
 }
@@ -199,4 +204,17 @@ a:hover {
     display:block; 
     margin:0px auto 60px auto;
     max-width: 900px;
+}
+
+.btn-go-back {
+    color: #3C3C3C;
+    background-color: transparent;
+    border: 1px solid #707070;
+    border-radius: 0px;
+    width: 200px;
+}
+
+.btn-go-back:hover {
+    color: #fff;
+    background-color: #707070
 }

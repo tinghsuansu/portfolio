@@ -2,6 +2,16 @@
 <html>
     
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FH0M7EC9XD"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-FH0M7EC9XD');
+        </script>
+        <!---->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>About | Jasmine Su</title>
@@ -11,29 +21,15 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
+        <script src="js/jquery-3.5.1.min.js" type="text/javascript" charset="utf-8"></script>
     </head>
     <body>
-        <!-- 我是Header -->
-        <nav class="navbar navbar-expand-lg navbar-light" style="padding: 16px; margin-bottom: 3em; background-color: #F5F5F5;">
-            <div class="container">
-              <a class="navbar-brand" href="index.html" style="font-family: Montserrat; font-size: 24px; font-weight: 700; color: #3C3C3C">Jasmine Su
-                </a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html">Portfolio</a>
-                  </li>
-                  <li class="nav-item active">
-                    <a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        </nav>
-        
+        <!--我是共用header-->
+        <div class="header-page"></div>
+        <script type="text/javascript">
+            $(".header-page").load("components/header.html")
+        </script>
+            
         <!-- 我是內容 -->
         <div class="container">           
             <!-- 我是表頭 -->
@@ -68,7 +64,7 @@
                 <div class="col-12 col-md-2">
                     <p class="work-title">2018.04 - 2020.10</p>
                 </div>
-                <div class="col-12 col-md-10">
+                <div class="col-12 col-md-10 col-margin-bottom">
                     <P class="work-title">設計師<br>禾本科股份有限公司</P>
                     <p>
                     - TRUEGRASSES官網重新設計：透過Google Analytics得知有約50%的使用者使用行動裝置瀏覽，因此在重新設計網頁時加強優化手機版頁面的瀏覽體驗<br>
@@ -81,7 +77,7 @@
                 <div class="col-12 col-md-2">
                     <p class="work-title">2016.07 - 2016.08</p>
                 </div>
-                <div class="col-12 col-md-10">
+                <div class="col-12 col-md-10 col-margin-bottom">
                     <P class="work-title">產品互動設計部 契約人員(實習)<br>仁寶電腦工業股份有限公司</P>
                     <p>
                     - 兩部產品介紹影片拍攝與製作，提供國際客戶參考<br>
@@ -112,7 +108,7 @@
                 <div class="col-12 col-md-2">
                     <p class="work-title">2013.09 - 2018.01</p>
                 </div>
-                <div class="col-12 col-md-10">
+                <div class="col-12 col-md-10 col-margin-bottom">
                     <p class="work-title">國立台灣科技大學 設計系 工業設計組<br>設計學士</p>
                 </div>
                 <div class="col-12 col-md-2">
@@ -131,34 +127,24 @@
                 <div class="col-12">
                     <h3>專業技能</h3>
                 </div>
-                <div class="col-12 col-md-2">
+                <div class="col-12 col-md-4 col-margin-bottom">
                     <p class="work-title">網站/介面設計</p>
+                    <P>- 熟悉Adobe XD<br>- 具產品開發流程概念，會基本Google Analytics操作<br>- 會寫HTML、CSS</P>
                 </div>
-                <div class="col-12 col-md-10">
-                    <P>- 熟悉Adobe XD<br>- 具產品開發流程概念，會基本Google Analytics操作</P>
-                </div>
-                <div class="col-12 col-md-2">
+                <div class="col-12 col-md-4 col-margin-bottom">
                     <p class="work-title">平面排版設計</p>
-                </div>
-                <div class="col-12 col-md-10">
                     <P>- 熟悉Adobe Illustrator、Indesign</P>
                 </div>
-                <div class="col-12 col-md-2">
-                    <p class="work-title">影像/影片編輯</p>
+                <div class="col-12 col-md-4 col-margin-bottom">
+                    <p class="work-title">影像編修</p>
+                    <P>- 具產品攝影技巧<br>- 熟悉Adobe Photoshop、Lightroom</P>
                 </div>
-                <div class="col-12 col-md-10">
-                    <P>- 具產品攝影技巧<br>- 熟悉Adobe Photoshop、Lightroom<br>- 熟悉Premiere、能用After Effects製作簡單的動畫</P>
-                </div>
-                <div class="col-12 col-md-2">
+                <div class="col-12 col-md-4 col-margin-bottom">
                     <p class="work-title">產品設計</p>
-                </div>
-                <div class="col-12 col-md-10">
                     <P>- 具產品設計流程概念、手繪能力<br>- 熟悉Rhino、Keyshot、AutoCAD<br></P>
                 </div>
-                <div class="col-12 col-md-2">
+                <div class="col-12 col-md-4">
                     <p class="work-title">英文能力</p>
-                </div>
-                <div class="col-12 col-md-10">
                     <P>- TOEIC: 955/990<br>- TOEFL iBT: 90/120</P>
                 </div>
             </div>
@@ -167,19 +153,16 @@
                     <hr>
                 </div>
             </div>
+            <div class="row align-items-center justify-content-center" style="margin-bottom: 60px">
+                <a class="btn btn-go-back" href="index.html" role="button">Back</a>
+            </div>
         </div>
         
-        <!-- 挖喜footer -->
-            <div class="footer">
-            <div class="container">
-                <div style="margin-bottom: 1.5em;">
-                    <a href="https://www.behance.net/ting_hsuan_su" target="_blank" title="Behance"><img src="img/behance.svg" style="width: 40px; margin: 8px;"></a>
-                    <a href="https://www.linkedin.com/in/ting-hsuan-su/" target="_blank" title="LinkedIn"><img src="img/linkedin.svg" style="width: 40px; margin: 8px"></a>
-                </div>
-                <p style="font-size: 14px; color: #707070;">Copyright &copy; 2020, Ting-Hsuan Su</p>
-                <p style="font-size: 11px; color: #707070;">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
-            </div>
-            </div>
+        <!--我是共用footer-->
+        <div class="footer-page"></div>
+        <script type="text/javascript">
+        $(".footer-page").load("components/footer.html")
+        </script>
         
         <!-- Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
