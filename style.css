@@ -60,6 +60,19 @@ hr {
     margin: 40px 0px;
 }
 
+figure {
+    text-align: right;
+}
+
+ul {
+    list-style:square;
+    color: #3c3c3c;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
 .col-thumbnail {
     margin: 20px 0px;
 }
@@ -155,6 +168,11 @@ a:hover {
     margin-bottom: 60px
 }
 
+.img-photo {
+    width: inherit;
+    margin-bottom: 20px
+}
+
 @media only screen and (max-width: 767px) {
   .desktop-only {
     display: none !important;
@@ -217,4 +235,16 @@ a:hover {
 .btn-go-back:hover {
     color: #fff;
     background-color: #707070
+}
+
+@media only screen and (min-width: 768px) {
+  .drop-120 {
+    margin-top: 120px;
+  }
+    .drop-240 {
+    margin-top: 240px;
+  }
+    .drop-360 {
+    margin-top: 360px;
+  }
 }
