@@ -61,7 +61,11 @@ hr {
 }
 
 figure {
-    text-align: right;
+    text-align: center;
+}
+
+figcaption {
+    margin-top: 1em;
 }
 
 ul {
@@ -247,4 +251,9 @@ a:hover {
     .drop-360 {
     margin-top: 360px;
   }
+}
+
+.copyright-claim {
+    text-align: center;
+    color: #707070;
 }
