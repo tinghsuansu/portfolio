@@ -26,6 +26,9 @@
         <!--Google Fonts-->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!--fluid gallery CSS-->
+        <link rel="stylesheet" href="BaguetteBox/baguetteBox.css">
+        <link rel="stylesheet" href="dailyui_fluid-gallery.css">
     </head>
     <body>
         <!--我是共用header-->
@@ -47,7 +50,7 @@
             <div class="project">
                 <div class="row">
                     <div class="col-12">
-                        <img class="img-project" src="img/project-eat/eat-main.jpg">
+                        <img class="img-project" src="img/project-eat/eat-app-main@2x.jpg">
                     </div>
                 </div>
                 <div class="row">
@@ -60,55 +63,58 @@
                         <p>「一起吃」是一個希望以食物分享來解決都市中剩食問題的服務設計專案。此專案為團隊作業，我在團隊裡負責的有前期資料蒐集與分析、訪談、整理服務藍圖與顧客旅程，以及APP和機台的介面流程。</p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row justify-content-center">
                     <div class="col-12">
                         <h3>設計概念</h3>
+                    </div>
+                    <div class="col-12 col-md-10">
+                            <img src="img/project-eat/eat_illustration.jpg" class="img-project" style="margin-bottom: 40px">
+                    </div>
+                    <div class="col-12">
                         <p> 「一起吃」是一個包括了行動裝置APP和實際櫃體的食物分享平台；是為了減少食物的浪費，以及加強人與人之間的連結而設立。</p>
                         <p>在台灣，一年被浪費的食物有275萬公噸，我們希望人們透過這個平台，將自己所不需要的、但依然可以被食用的食材分享出去，而透過此平台得到食物的人，也能將這份心意繼續傳達下去；除了減少不必要的食物浪費，還能藉由食物的傳遞增加個體之間的互動，解決無緣社會的問題。</p>
+                    </div>    
+                </div>
+                <div class="row">
+                    <div class="col-12 section-title-eat">
+                        <h3>一、使用者研究</h3>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12">
                         <h3>現有問題分析</h3>
                     </div>
-                    
                     <div class="col-12 col-md-4">
                         <div class="project-card img-project">
-                            <img src="img/project-eat/problem_home@2x.png" class="img-project" style="margin-bottom: 1em;">
+                            <img src="img/project-eat/icon_fridge@2x.png" class="img-project project-card-icon">
+                            <div class="thumbnail-text">
                             <h4>A. 家中</h4>
                             <p>1. 冰箱、儲藏櫃空間不足<br>2. 食材放在冰箱過期發臭<br>3. 廚餘發臭、引來蚊蟲<br></p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-4">
                         <div class="project-card img-project">
-                            <img src="img/project-eat/problem_trash@2x.png" class="img-project" style="margin-bottom: 1em;">
+                            <img src="img/project-eat/icon_fishbone@2x.png" class="img-project project-card-icon">
+                            <div class="thumbnail-text">
                             <h4>B. 廚餘</h4>
                             <p>1. 生/熟廚餘需分開，但成效不彰<br>2. 運送廚餘成本高，但燃燒破壞環境<br>3. 一般家庭單日廚餘少，常與垃圾一起丟</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-4">
                         <div class="project-card img-project">
-                            <img src="img/project-eat/problem_market@2x.png" class="img-project" style="margin-bottom: 1em;">
+                            <img src="img/project-eat/icon_market@2x.png" class="img-project project-card-icon">
+                            <div class="thumbnail-text">
                             <h4>C. 超市</h4>
                             <p>1. 較少小包裝的東西，就算有也較貴<br>2. 即期食品較便宜</p>
+                            </div>
                         </div>
                     </div>
-                </div>
                 
-                <div class="row">
                     <div class="col-12">
                         <h3>目標族群定義</h3>
                     </div>
-                    <!--<div class="col-12 col-md-3" style="border: solid;">
-                        <div class="row justify-content-center icon-list">
-                        <div class="col-3 col-md-6" style="border: solid;">
-                            <img src="img/project-eat/icon_city@2x.png" class="img-project">
-                        </div>
-                        <div class="col-9 col-md-12" style="border: solid;">
-                            <p>1. 居住在都市</p>
-                        </div>
-                        </div>
-                    </div>-->
                     <div class="col-6 col-md-3">
                         <div class="project-card img-project">
                             <img src="img/project-eat/icon_city@2x.png" class="img-project project-card-icon">
@@ -133,12 +139,10 @@
                             <p class="thumbnail-text">4. 所需食物份量少而難以購買</p>
                         </div>
                     </div>
-                </div>
-                <div class="row">
+
                     <div class="col-12">
-                        <h3>訪談</h3>
+                        <h3>訪談結果</h3>
                         <p> 我們訪談了4位受訪者，了解他們的作息、內食頻率、食材採買/處理的習慣、與家中人員及社區鄰居的關係。</p>
-                        <h4>訪談結果</h4>
                         <ol>
                             <li>購買份量問題：香料、加工食品等少有一人份的小包裝，一餐分量的食材也難以購得；希望能取得少量多樣的食材。</li>
                             <li>料理時間問題：由於能花在煮飯的時間不多，希望能有快速處理好的食材，或是更快煮好食物的方法。</li>
@@ -173,21 +177,33 @@
                     </div>
                 </div>
                 <div class="row">
+                    <div class="col-12 section-title-eat">
+                        <h3>二、分析</h3>
+                    </div>    
+                </div>
+                <div class="row">
                     <div class="col-12">
-                        <h3>價值主張：以食物分享來解決都市中剩食問題</h3>
+                        <h3>價值主張</h3>
                     </div>
                     <div class="col-12 col-md-12">
                         <div class="img-overflow" style="margin-bottom: 20px;">
                             <img src="img/project-eat/value_proposition@2x.png" class="img-chart">
                         </div>
                     </div>
-                    <div class="col-12" style="background: #F3D077;">
-                        <h3 style="text-align: center; margin: 40px">Innovation Points:<br>透過網路平台和左鄰右舍交換多餘的食物</h3>
+                    <div class="col-12">
+                        <p>
+                        根據訪談結果和情境分析，我們設定了此項服務的價值主張「以食物分享來解決都市中的剩食問題」；讓使用者透過網路平台和左鄰右舍交換多餘的食物。此項服務將透過網路平台（手機APP）媒合有多餘剩食的人和想要領取的人，讓他們在公共場合（位於超市的公共管理冰箱）進行交換，並透過評價機制提升信任度。
+                        </p>
                     </div>
                     <div class="col-12 col-md-12">
                         <div class="img-overflow">
                             <img src="img/project-eat/innovation_points@2x.png" class="img-chart" style="margin: 60px auto;">
                         </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 section-title-eat">
+                        <h3>三、服務流程</h3>
                     </div>
                 </div>
                 <div class="row">
@@ -337,37 +353,67 @@
                         </table>
                     </div>                  
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <h3>服務藍圖</h3>
-                    </div>
-                    <div class="col-12">
-                        <div class="img-overflow">
-                            <img src="img/project-eat/service_blueprint.jpg" style="max-height: 680px">
-                        </div>
-                    </div>
-                </div>
+                
                 <div class="row">
                     <div class="col-12">
                         <h3>Functional Map</h3>
                     </div>
-                    <div class="col-12 col-md-6">
+                    <div class="col-12">
+                        <div class="tz-gallery thumbnail-text">
+                            <div class="row">
+                                <div class="col-6">
+                                    <a class="lightbox img-project" href="img/project-eat/eat_functional_map_giver.jpg">
+                                        <img src="img/project-eat/eat_functional_map_giver.jpg" class="img-project">
+                                    </a>
+                                    <p>給予食材者的Functional Map（點擊圖片放大）</p>
+                                </div>
+                                <div class="col-6">
+                                    <a class="lightbox img-project" href="img/project-eat/eat_functional_map_receiver.jpg">
+                                        <img src="img/project-eat/eat_functional_map_receiver.jpg" class="img-project">
+                                    </a>
+                                    <p>拿取食材者的Functional Map（點擊圖片放大）</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="col-6 col-md-6">
                         <figure class="img-project">
-                            <img src="img/project-eat/eat_functional_map_giver.jpg" class="img-project">
+                            <img src="img/project-eat/eat_functional_map_giver.jpg" class="img-project scale-on-click">
                             <figcaption>給予食材者的Functional Map</figcaption>
                         </figure>
                     </div>
-                    <div class="col-12 col-md-6">
+                    <div class="col-6 col-md-6">
                         <figure class="img-project">
                             <img src="img/project-eat/eat_functional_map_receiver.jpg" class="img-project">
                             <figcaption>拿取食材者的Functional Map</figcaption>
                         </figure>
                     </div>
+                    -->
                 </div>
                 <div class="row">
                     <div class="col-12">
                         <h3>Flow Chart</h3>
                     </div>
+                    
+                        <div class="tz-gallery thumbnail-text">
+                            <div class="row">
+                                <div class="col-6">
+                                    <a class="lightbox img-project" href="img/project-eat/eat_flow_chart_giver.jpg">
+                                        <img src="img/project-eat/eat_flow_chart_giver.jpg" class="img-project">
+                                    </a>
+                                    <p>給予食材者的Flow Chart（點擊圖片放大）</p>
+                                </div>
+                                <div class="col-6">
+                                    <a class="lightbox img-project" href="img/project-eat/eat_flow_chart_receiver.jpg">
+                                        <img src="img/project-eat/eat_flow_chart_receiver.jpg" class="img-project">
+                                    </a>
+                                    <p>拿取食材者的Flow Chart（點擊圖片放大）</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <!--
                     <div class="col-12" style="margin-bottom: 60px">
                         <figure class="img-project">
                             <img src="img/project-eat/eat_flow_chart_giver.jpg" class="img-project desktop-only">
@@ -386,24 +432,37 @@
                             <figcaption>拿取食材者的Flow Chart</figcaption>
                         </figure>
                     </div>
+                    -->
+                </div>
+                <div class="row">
+                    <div class="col-12 section-title-eat">
+                        <h3>四、介面設計</h3>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-12">
                         <h3>UI Flow</h3>
                     </div>
-                    <div class="col-12">
+                    <div class="tz-gallery thumbnail-text">
+                            <div class="row">
+                                <div class="col-12">
+                                    <a class="lightbox img-project" href="img/project-eat/eat_uiflow.jpg">
+                                        <img src="img/project-eat/eat_uiflow.jpg" class="img-project">
+                                    </a>
+                                    <p class="mobile-only">點擊圖片放大</p>
+                                </div>
+                            </div>
+                        </div>
+                    <!--<div class="col-12">
                             <img src="img/project-eat/eat_uiflow.jpg" class="img-project desktop-only">
                             <div class="img-overflow">
-                                <img src="img/project-eat/eat_uiflow.jpg" style="max-height: 680px" class="mobile-only">
+                                <img src="img/project-eat/eat_uiflow.jpg" style="max-height: 600px" class="mobile-only">
                             </div>
-                    </div>
+                    </div>-->
                 </div>
                 <div class="row">
                     <div class="col-12">
                         <h3>介面設計：手機APP</h3>
-                    </div>
-                    <div class="col-12">
-                        <img src="img/project-eat/eat-app-main@2x.jpg" class="img-project" style="margin-bottom: 60px;">
                     </div>
                     <div class="col-6 col-md-3">
                         <h4>市場頁面</h4>
@@ -512,6 +571,21 @@
                     </div>
                 </div>
                 <div class="row">
+                    <div class="col-12 section-title-eat">
+                        <h3>五、商業模式</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h3>服務藍圖</h3>
+                    </div>
+                    <div class="col-12">
+                        <div class="img-overflow">
+                            <img src="img/project-eat/service_blueprint.jpg" style="max-height: 600px">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-12 col-md-12">
                         <h3>Business Model</h3>
                     </div>
@@ -536,5 +610,11 @@
         <!-- Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        
+        <!--fluid gallery-->
+        <script src="BaguetteBox/baguetteBox.js"></script>
+        <script>
+            baguetteBox.run('.tz-gallery');
+        </script>
     </body>
 </html>
