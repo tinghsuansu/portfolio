@@ -33,6 +33,12 @@ h4 {
     margin-bottom: 1em;
 }
 
+h6 {
+    font-weight: 400;
+    font-size: 13px;
+    color: #8e8e8e;
+}
+
 .row {
     border-color: #000;
     border-width: 1px;
@@ -114,7 +120,7 @@ li {
 
 .thumbnail-text{
     text-align: center;
-    margin-bottom: auto;
+    margin-bottom: 0.5em;
 }
 
 a {
