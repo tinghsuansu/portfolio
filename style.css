@@ -244,6 +244,31 @@ a:hover {
     margin-bottom: 0em;
 }
 
+.customer-journey-text {
+    width: 60%;
+    float: left;
+}
+
+.customer-journey-img {
+    width: 40%;
+    float: right;
+}
+
+.customer-journey-img > img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+    .customer-journey-text {
+    width: 100%;
+    }
+    
+    .customer-journey-img {
+    width: 100%;
+    bottom: 0px;
+    }
+}
+
 .btn-go-back {
     color: #3C3C3C;
     background-color: transparent;
