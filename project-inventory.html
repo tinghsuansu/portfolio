@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FH0M7EC9XD"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-FH0M7EC9XD');
+        </script>
+        <!---->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>SaaS 線上庫存系統 - Jasmine Su</title>
+        <meta name="description" content="蘇庭萱的作品集 Portfolio of Jasmine Su">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <!--樣式-->
+        <link rel="stylesheet" href="style.css">
+        <script src="js/jquery-3.5.1.min.js" type="text/javascript" charset="utf-8"></script>
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!--fluid gallery CSS-->
+        <link rel="stylesheet" href="BaguetteBox/baguetteBox.css">
+        <link rel="stylesheet" href="dailyui_fluid-gallery.css">
+    </head>
+    <body>
+        <!--我是共用header-->
+        <div class="header-page"></div>
+        <script type="text/javascript">
+        $(".header-page").load("components/header.html")
+        </script>
+        
+        <!-- 我是內容 -->
+        <div class="container">           
+            <!-- 我是表頭 -->
+            <div class="row">
+                <div class="col page-title-wrap">
+                    <div class="wrap page-title">Project</div>
+                </div>
+            </div>
+            
+            <!-- 我是內容 -->
+            <div class="project">
+                <div class="row">
+                    <div class="col-12">
+                        <img class="img-project" src="img/project-inventory/inventory_main.jpg">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h2>SaaS 線上庫存系統</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h3>專案說明</h3>
+                        <p>此專案為個人練習作品。<br>
+                            對於自行開發產品販售的中小型自有品牌來說，庫存可能會有原料、零件、半成品、商品等不同狀態的項目，而不同商品可能會共用相同的零件，同一個商品也可能會因為客製需求而使用不同規格的零件；我希望透過群組的方式將庫存項目分類連結，讓業務/生管等不同職務的使用者皆能輕鬆使用。<br>
+                            此線上庫存系統為SaaS產品，因時間和資源的限制，在這個專案中僅設計庫存管理的部分。
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h3>User Story</h3>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="img-project">
+                            <div style="text-align: center; margin-bottom: 20px">
+                                <img src="img/project-inventory/003.jpg" class="img-project" style="width: 50%;">
+                            </div>
+                            <div>
+                                <h4>身為一個業務...</h4>
+                                <ul>
+                                    <li>我要紀錄每次出貨的細節，因此未來我可以知道過去的銷售狀況。</li>
+                                    <li>我要查看商品庫存，因此我可以告訴客戶可訂購量。</li>
+                                    <li>我要查看不同商品的銷售量，因此我可以調整銷售策略。</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="img-project">
+                            <div style="text-align: center; margin-bottom: 20px">
+                                <img src="img/project-inventory/002.jpg" class="img-project" style="width: 50%;">
+                            </div>
+                            <div>
+                                <h4>身為一個生產管理員...</h4>
+                                <ul>
+                                    <li>我要知道哪些商品庫存不足，因此我可以下單生產。</li>
+                                    <li>我要了解庫存品的狀態，因此我可以進行加工或調整。</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="img-project">
+                            <div style="text-align: center; margin-bottom: 20px">
+                                <img src="img/project-inventory/001.jpg" class="img-project" style="width: 50%;">
+                            </div>
+                            <div>
+                                <h4>身為一個行銷...</h4>
+                                <ul>
+                                    <li>我要查看不同商品的庫存/銷售量，因此我可以制定行銷策略。</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <h3>Functional Map</h3>
+                        <p>根據user story 所描述的需求，我先將此庫存系統要達成的任務分成出庫、入庫、管理、通知四類。</p>
+                        <div class="img-overflow" style="margin-bottom: 40px">
+                            <img src="img/project-inventory/inventory_fmap1.jpg" class="desktop-only" style="width: 100%">
+                            <img src="img/project-inventory/inventory_fmap1.jpg" class="mobile-only" style="max-width: 1000px">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <p>再將這些列出來的任務統整成「管理資料」和「輸入資料」兩大類。</p>
+                        <div class="img-overflow">
+                            <img src="img/project-inventory/inventory_fmap2.jpg" class="desktop-only" style="width: 100%">
+                            <img src="img/project-inventory/inventory_fmap2.jpg" class="mobile-only" style="max-width: 1000px">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h3>Flow Chart</h3>
+                        <p>將functional map 中列出的任務轉換成詳細操作流程（點擊圖片放大）。</p>
+                    </div>
+                    <div class="row tz-gallery">
+                        <div class="col-12 col-md-4">
+                            <a class="lightbox img-project" href="img/project-inventory/inventory_flowchart2.jpg">
+                                <img src="img/project-inventory/inventory_flowchart2.jpg" class="img-project" style="margin-bottom: 20px">
+                            </a>
+                            <p>輸入資料：出庫、入庫、調貨、預留</p>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <a class="lightbox img-project" href="img/project-inventory/inventory_flowchart1.jpg">
+                                <img src="img/project-inventory/inventory_flowchart1.jpg" class="img-project" style="margin-bottom: 20px">
+                            </a>
+                            <p>管理資料：新增貨品、編輯貨品、新增群組、編輯群組、輸入標籤</p>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <a class="lightbox img-project" href="img/project-inventory/inventory_flowchart3.jpg">
+                                <img src="img/project-inventory/inventory_flowchart3.jpg" class="img-project" style="margin-bottom: 20px">
+                            </a>
+                            <p>檢視資料：搜尋庫存、排序庫存、搜尋明細、篩選明細、查詢庫存不足項目</p>
+                        </div>
+                    </div>
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <h3>頁面架構 &amp; UI Flow</h3>
+                        <p>確認完要達成的任務和操作流程後，先建立基本的頁面架構：</p>
+                    </div>
+                    <div class="col-6 desktop-only" style="margin-bottom: 40px">
+                        <img src="img/project-inventory/inventory_ia@2x.png" class="img-project">
+                    </div>
+                    <div class="col-10 mobile-only" style="margin-bottom: 40px">
+                        <img src="img/project-inventory/inventory_ia_m@2x.png" class="img-project">
+                    </div>
+                    <div class="col-12">
+                        <p>最後擴展成完整的UI flow（點擊圖片放大）：</p>
+                        <div class="tz-gallery thumbnail-text">
+                            <div class="col-12">
+                                <a class="lightbox img-project" href="img/project-inventory/inventory_uiflow.jpg">
+                                    <img src="img/project-inventory/inventory_uiflow.jpg" class="img-project">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                    
+                </div>
+                <div class="row justify-content-center" id="ui-inventory">
+                    <div class="col-12">
+                        <h3>介面設計</h3>
+                        <video autoplay loop muted width="100%">
+	                       <source src="img/project-inventory/ui_expand.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h4>出入庫明細表</h4>
+                        <p>以列表顯示所有出入庫資料紀錄，並可透過時間區間篩選、出入庫標籤篩選或關鍵字搜尋來尋找特定明細。</p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <img src="img/project-inventory/ui_filter_time.jpg" class="img-photo">
+                        <p>自訂時間區間篩選</p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <img src="img/project-inventory/ui_filter_tag.jpg" class="img-photo">
+                        <p>按標籤篩選</p>
+                    </div>
+                    <div class="col-12">
+                        <video autoplay loop muted width="100%">
+	                       <source src="img/project-inventory/ui_add-data.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h4>新增出庫/入庫資料</h4>
+                        <p>依序填寫日期、填表人員、對象/來源、標籤和備註（出庫資料需標記是否為預留貨品）後，點選「新增」按鈕加入出庫/入庫項目，並填寫各項目出庫/入庫的數量。</p>
+                    </div>
+                    <div class="col-12">
+                        <img src="img/project-inventory/ui_inventory.jpg" class="img-photo">
+                        <h4>庫存表</h4>
+                        <p>所有庫存項目的資料列表。可以透過庫存標籤篩選或關鍵字搜尋來尋找特定項目。</p>
+                    </div>
+                    <div class="col-12">    
+                        <div class="row"> 
+                            <div class="col-md-3 desktop-only">
+                                <h4>庫存不足通知</h4>
+                                <p>當有項目庫存數量少於安全庫存量，系統會在開啟庫存表頁面時跳出通知視窗；使用者也可以勾選「只顯示庫存不足項目」快速查找庫存不足的項目。</p>
+                            </div>
+                            <div class="col-12 col-md-9">
+                                <video autoplay loop muted width="100%">
+	                               <source src="img/project-inventory/ui_notification.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="col-12 mobile-only">
+                                <h4>庫存不足通知</h4>
+                                <p>當有項目庫存數量少於安全庫存量，系統會在開啟庫存表頁面時跳出通知視窗；使用者也可以勾選「只顯示庫存不足項目」快速查找庫存不足的項目。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8 col-md-4">
+                        <img src="img/project-inventory/inventory_groupanditem@2x.png" class="img-photo">
+                    </div>
+                    <div class="col-12">
+                        <h4>建立庫存項目</h4>
+                        <p>庫存項目分為「貨品」和「群組」兩種；貨品為庫存最小單位，可以建立多種規格；群組為數個貨品的組合，當群組項目出庫/入庫時，群組內包含的貨品的庫存數量也會跟著增減。</p>
+                    </div>
+                    <div class="col-12">
+                        <div class="row"> 
+                            <div class="col-md-3 desktop-only">
+                                <h4>建立貨品</h4>
+                                <p>可在同一個頁面建立同系列不同規格的貨品資料。</p>
+                            </div>
+                            <div class="col-12 col-md-9">
+                                <img src="img/project-inventory/ui_add-item.jpg" class="img-photo">
+                            </div>
+                            <div class="col-12 mobile-only">
+                                <h4>建立貨品</h4>
+                                <p>可在同一個頁面建立同系列不同規格的貨品資料。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12" style="margin-bottom: 0px">
+                        <div class="row"> 
+                            <div class="col-md-3 desktop-only">
+                                <h4>建立群組</h4>
+                                <p>填妥群組資料後，點擊「新增」按鈕加入現有貨品，並設定每單位數量。</p>
+                            </div>
+                            <div class="col-12 col-md-9">
+                                <video autoplay loop muted width="100%">
+	                               <source src="img/project-inventory/ui_add-group.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="col-12 mobile-only">
+                                <h4>建立群組</h4>
+                                <p>填妥群組資料後，點擊「新增」按鈕加入現有貨品，並設定每單位數量。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h3>Style Guide</h3>
+                        <img class="img-project desktop-only" src="img/project-inventory/inventory_styleguide-1.jpg">
+                        <img class="img-project desktop-only" src="img/project-inventory/inventory_styleguide-2.jpg">
+                        <img class="img=project mobile-only" src="img/project-inventory/inventory_styleguide_m.jpg">
+                    </div>
+                </div>
+                    
+                <div class="row align-items-center justify-content-center">
+                    <a class="btn btn-go-back" href="index.html" role="button">Back</a>
+                </div>
+            </div>
+        </div>
+        <!--我是共用footer-->
+        <div class="footer-page"></div>
+        <script type="text/javascript">
+        $(".footer-page").load("components/footer.html")
+        </script>
+        
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        
+        <!--fluid gallery-->
+        <script src="BaguetteBox/baguetteBox.js"></script>
+        <script>
+            baguetteBox.run('.tz-gallery');
+        </script>
+    </body>
+</html>

@@ -269,6 +269,10 @@ a:hover {
     }
 }
 
+#ui-inventory > div {
+    margin-bottom: 40px
+}
+
 .btn-go-back {
     color: #3C3C3C;
     background-color: transparent;
