@@ -273,6 +273,18 @@ a:hover {
     margin-bottom: 40px
 }
 
+@media only screen and (min-width: 768px) {
+    .inventory-flow-chart {
+        height: 260px;
+        position: relative;
+    }
+    .inventory-flow-chart > a {
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+    }
+}
+
 .btn-go-back {
     color: #3C3C3C;
     background-color: transparent;
