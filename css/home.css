@@ -1,0 +1,161 @@
+/* ============================================================
+   HOME PAGE STYLES
+   Layout uses CSS Grid with fr units so all columns scale
+   proportionally between 768px and 1180px viewport widths.
+   ============================================================ */
+
+/* ---- Page wrapper ---- */
+.home-main {
+  padding-block: var(--gap-between-sections);
+}
+
+.home-main .container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-between-sections);
+}
+
+/* ============================================================
+   HERO
+   8fr : 4fr grid (maps to 8-col : 4-col in design)
+   Subtitle is bottom-aligned within the row.
+   ============================================================ */
+.home-hero {
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  gap: var(--col-gap);
+  align-items: end;   /* subtitle aligns to bottom of title */
+}
+
+.home-hero__title {
+  font-family: var(--font-title);
+  font-size: 56px;         /* one-off, not in token system */
+  font-weight: 600;
+  line-height: var(--lh-title);
+  letter-spacing: var(--ls-tight);
+  color: var(--color-text-normal);
+}
+
+.home-hero__subtitle {
+  color: var(--color-text-normal);
+}
+
+/* ============================================================
+   PROJECT GRID
+   2 equal columns (6fr : 6fr)
+   Row gap = gap_between_parts, col gap = column gap
+   ============================================================ */
+.home-projects__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--gap-between-parts) var(--col-gap);
+}
+
+/* ---- Project Card ---- */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-margin-h3);   /* 16px between image, info, tags */
+  color: var(--color-text-normal);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.project-card:hover .project-card__image img {
+  transform: scale(1.02);
+}
+
+/* Image container: aspect-ratio preserves proportional height */
+.project-card__image {
+  width: 100%;
+  aspect-ratio: 29/20;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.project-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+/* Info block: title → subtitle → description, 8px gaps */
+.project-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-margin-h5);   /* 8px */
+}
+
+/* Tags row */
+.project-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-margin-h5);   /* 8px */
+}
+
+/* ============================================================
+   CONTACT SECTION
+   8fr : 4fr grid (maps to 8-col : 4-col in design)
+   ============================================================ */
+.home-contact {
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  gap: var(--col-gap);
+  align-items: center;
+}
+
+.home-contact__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-margin-h5);   /* 8px */
+}
+
+.home-contact__item {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-margin-h5);   /* 8px */
+  color: var(--color-text-normal);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.home-contact__item:hover {
+  color: var(--color-text-subtle);
+}
+
+.home-contact__item i {
+  font-size: 1em;   /* matches the surrounding text size */
+  width: 1em;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+/* ============================================================
+   RESPONSIVE — Mobile (≤ 768px)
+   ============================================================ */
+@media (max-width: 768px) {
+
+  /* Hero: stack to single column */
+  .home-hero {
+    grid-template-columns: 1fr;
+    gap: var(--gap-within-s);   /* 24px */
+  }
+
+  .home-hero__title {
+    font-size: 36px;
+  }
+
+  /* Project grid: single column */
+  .home-projects__grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Contact: stack to single column */
+  .home-contact {
+    grid-template-columns: 1fr;
+    gap: var(--gap-within-s);   /* 24px */
+  }
+
+}

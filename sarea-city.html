@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarea City — Jasmine Su</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/project.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="site-header__logo">Jasmine Su</a>
+      <nav class="site-header__nav" id="main-nav" aria-label="Main navigation">
+        <!-- <a href="#">About</a> -->
+        <a href="https://www.linkedin.com/in/ting-hsuan-su/" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+      <button class="site-header__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== MAIN ===================== -->
+  <main class="project-main">
+    <div class="container">
+
+      <!-- ── PROJECT HEADER ─────────────────────────── -->
+      <section class="project-header">
+
+        <!-- Title row: name (6col) + description (6col) -->
+        <div class="project-header__title-row">
+          <h1 class="project-header__h1">Sarea City</h1>
+          <p class="t4">Designing a smart street lighting management platform with optimized usability, easy maintenance, and adaptability to various use cases from 0 to 1</p>
+        </div>
+
+        <!-- Hero image -->
+        <div class="project-header__hero">
+          <img src="assets/images/sarea-city/sarea_hero.webp" alt="Sarea City platform overview">
+        </div>
+
+        <!-- Project info: 4 equal columns -->
+        <div class="project-header__info">
+          <div class="project-info-item">
+            <span class="t5">Project</span>
+            <span class="caption">Product design project at Spark Technologies Inc.</span>
+          </div>
+          <div class="project-info-item">
+            <span class="t5">My Contribution</span>
+            <span class="caption">UX Design<br>Product Design<br>Design System</span>
+          </div>
+          <div class="project-info-item">
+            <span class="t5">Team</span>
+            <span class="caption">2 Frontend Developer<br>2 Backend Developer<br>1 Project Manager<br>1 Product Owner</span>
+          </div>
+          <div class="project-info-item">
+            <span class="t5">Timeline</span>
+            <span class="caption">2021 – 2022</span>
+          </div>
+        </div>
+
+      </section><!-- /project-header -->
+
+      <hr class="divider">
+
+      <!-- ── PROJECT GOAL ────────────────────────────── -->
+      <section class="project-section" aria-labelledby="goal-title">
+
+        <div class="section-title">
+          <span class="t5">Project Goal:</span>
+          <h2 class="t2" id="goal-title">Optimizing street light management in smart cities</h2>
+        </div>
+
+        <!-- Background -->
+        <div style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+          <div class="part-text text-col-8">
+            <div class="part-title">
+              <span class="t5">Background:</span>
+              <h3 class="t3">The Smart Street Light Management System</h3>
+            </div>
+            <p class="body-text">Sarea City is a smart street light management system that allows users to control street lights remotely, monitor the device status of each streetlight, and set lighting schedules. It is one of the main products of Spark Technologies, a company that provides customized IoT services for businesses and organizations.</p>
+          </div>
+          <div class="media-caption">
+            <div class="img-ratio" style="aspect-ratio: 2360 / 764;">
+              <img src="assets/images/sarea-city/sarea_project-goal.webp" alt="How Sarea City works">
+            </div>
+            <span class="media-caption__text">How Sarea City works</span>
+          </div>
+        </div>
+
+        <!-- User Archetype -->
+        <div class="grid-8-4">
+          <div class="part-text">
+            <div class="part-title">
+              <span class="t5">User Archetype:</span>
+              <h3 class="t3">Street Light Management Staff</h3>
+            </div>
+            <p class="body-text">Our users were street light management staff in the city government or large institutions like universities. They need to set up and maintain street lights in specific areas to ensure people's safety.</p>
+          </div>
+          <img src="assets/images/sarea-city/sarea_user-archetype.webp" alt="User archetype illustration" class="img-fluid">
+        </div>
+
+        <!-- Problem -->
+        <div class="part-text">
+          <div class="part-title">
+            <span class="t5">Problem:</span>
+            <h3 class="t3">The existing street light management solutions were hard to market as products due to unintuitive and inconsistent UX patterns</h3>
+          </div>
+          <div class="grid-6-6">
+            <p class="body-text">The smart street light management system was developed during the company's early stages, and due to time and resource constraints, there was room for improvement in the UX of the digital platform.<br><br>Additionally, since the previous platforms were one-off solutions built for different clients, the UX patterns across them were not consistent, making it hard to market the solution as a product for potential clients.</p>
+            <div class="media-caption">
+              <img src="assets/images/sarea-city/sarea_problem.webp" alt="Past street light management platforms" class="img-fluid">
+              <span class="media-caption__text">Past street light management platforms</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design Overview -->
+        <div class="part">
+          <div class="section-title">
+            <span class="t5">Design Overview:</span>
+            <h2 class="t2">Sarea City: a digital platform optimized for intuitive IoT device management in smart cities</h2>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+            <p class="body-text text-col-8">Sarea City is a modular street lighting management platform that integrates with the hardware system to offer users an intuitive device management experience. The three main design challenges were clear device status display, intuitive IoT interactions, and a scalable design system for future customization. In this project, I optimized the overall user experience, designed the entire platform from 0 to 1, and established a consistent design system for the platform to simplify maintenance tasks for the R&amp;D team.</p>
+            <video class="project-video" autoplay muted loop playsinline>
+              <source src="assets/videos/sarea-city/sarea_reels.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+      </section><!-- /project-goal -->
+
+      <hr class="divider">
+
+      <!-- ── CHALLENGE 01 ─────────────────────────────── -->
+      <section class="project-section" aria-labelledby="ch01-title">
+
+        <div class="section-title">
+          <span class="t5">Challenge 01</span>
+          <h2 class="t2" id="ch01-title">How might we display IoT device statuses clearly and informatively?</h2>
+        </div>
+
+        <!-- Overview -->
+        <div style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+          <div class="part-text text-col-8">
+            <div class="part-title">
+              <span class="t5">Overview:</span>
+              <h3 class="t3">Real-Time Monitoring with Interactive Map Pins</h3>
+            </div>
+            <p class="body-text">Users need to monitor real-time device status and check the detailed information of each street light on the platform. In Sarea City, each map pin represent the location of a street light. When users click on a map pin, the information module would slide in to display the detail of the street light and the equipped devices.</p>
+          </div>
+          <video class="project-video" style="box-shadow: var(--shadow-default);" autoplay muted loop playsinline>
+            <source src="assets/videos/sarea-city/sarea_map-view.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- Problems -->
+        <div class="part">
+          <div class="part-text">
+            <div class="part-title">
+              <span class="t5">Problem:</span>
+              <h3 class="t3">The Existing Methods of Displaying Information Need Optimization</h3>
+            </div>
+          </div>
+
+          <div class="grid-6-6">
+            <div class="h4-item">
+              <span class="content-label">Problem 1</span>
+              <h4 class="t4">The Old Map Pins are Hard to Identify</h4>
+              <p class="body-text">In the existing platform, we used different colors on rings and circles to define the different statuses of each smart pole. However, as the number of installed IoT devices increased, the combination of colors on the map pins became too complicated and hard to identify.</p>
+            </div>
+            <img src="assets/images/sarea-city/sarea_map-pin_before-1.webp" alt="Old map pin design" class="img-fluid">
+          </div>
+
+          <div class="grid-6-6">
+            <div class="h4-item">
+              <span class="content-label">Problem 2</span>
+              <h4 class="t4">The Old Info Modules are Space-Consuming</h4>
+              <p class="body-text">When users are editing street light or device data, the information module pops up and covers the map, hindering users' ability to reference spatial context while making changes.</p>
+            </div>
+            <img src="assets/images/sarea-city/sarea_module_before-2.webp" alt="Old information module design" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="part-lg">
+
+          <div class="part-text">
+            <div class="part-title">
+              <span class="t5">Design Solution:</span>
+              <h3 class="t3">New Map Pins and Information Module Design that Provides Clearer Information</h3>
+            </div>
+          </div>
+
+          <!-- Solution 1 -->
+          <div style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+            <div class="h4-item text-col-8">
+              <span class="content-label">Solution 1</span>
+              <h4 class="t4">Redesigning Map Pins for Enhanced Information Hierarchy</h4>
+              <p class="body-text">I prioritized the luminaire controller statuses because of their operational importance for the street light management staff. For secondary IoT devices, such as electrical switch box controllers, I used a small dot positioned in the top-right corner of each map pin.</p>
+            </div>
+            <div class="grid-8-4" style="align-items: stretch;">
+              <div class="media-caption">
+                <img src="assets/images/sarea-city/sarea_map-pin_after-1.webp" alt="Map pin design comparison" class="img-fluid" style="flex: 1; min-height: 0; object-fit: contain; width: 100%;">
+                <span class="media-caption__text">Map pin design comparison</span>
+              </div>
+              <div class="media-caption">
+                <img src="assets/images/sarea-city/sarea_map-pin_sketch.webp" alt="Map pin design ideation sketches" class="img-fluid" style="flex: 1; min-height: 0; object-fit: contain; width: 100%;">
+                <span class="media-caption__text">Map pin design ideation sketches</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Solution 2 -->
+          <div style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+            <div class="h4-item text-col-8">
+              <span class="content-label">Solution 2</span>
+              <h4 class="t4">Providing Real-time Feedback of Device Status to Reduce Unnecessary Actions</h4>
+              <p class="body-text">There's a brief delay between users controlling the lights through the platform and the luminaire controller receiving the signal to adjust the light. This delay might lead users to believe they haven't successfully controlled the lights, prompting unnecessary repeated commands.<br><br>To resolve this issue, we introduced <strong>a "switching" status that appears during the time gap after users control the lights through the platform.</strong> To convey this status more clearly, I combined the colors representing "on" and "off" to indicate the "switching" status better.</p>
+            </div>
+            <div class="grid-6-6" style="align-items: start;">
+              <div class="media-caption">
+                <img src="assets/images/sarea-city/sarea_map-pin_after-2.webp" alt="Different street light statuses" class="img-fluid">
+                <span class="media-caption__text">Different street light statuses</span>
+              </div>
+              <div class="media-caption">
+                <video class="project-video" autoplay muted loop playsinline>
+                  <source src="assets/videos/sarea-city/sarea_status-switching.mp4" type="video/mp4">
+                </video>
+                <span class="media-caption__text">How the "switching" status works</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Solution 3 -->
+          <div style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+            <div class="h4-item text-col-8">
+              <span class="content-label">Solution 3</span>
+              <h4 class="t4">Optimizing Layout to Provide Flexibility in Information Display</h4>
+              <p class="body-text">The new information module is fixed on one side of the map so that users can edit the pole's information and check the map pins simultaneously. This design provides more flexibility of displaying more location-related information on the map.</p>
+            </div>
+            <img src="assets/images/sarea-city/sarea_module_after-comparison.webp" alt="New information module layout comparison" class="img-fluid">
+            <div class="media-caption">
+              <video class="project-video" autoplay muted loop playsinline>
+                <source src="assets/videos/sarea-city/sarea_module-flexibility.mp4" type="video/mp4">
+              </video>
+              <span class="media-caption__text">Different information display</span>
+            </div>
+          </div>
+
+        </div><!-- /part-lg solutions -->
+
+      </section><!-- /challenge-01 -->
+
+      <hr class="divider">
+
+      <!-- ── CHALLENGE 02 ─────────────────────────────── -->
+      <section class="project-section" aria-labelledby="ch02-title">
+
+        <div class="section-title">
+          <span class="t5">Challenge 02</span>
+          <h2 class="t2" id="ch02-title">How might we interact with the IoT system (ex. schedule setting) intuitively?</h2>
+        </div>
+
+        <!-- Background -->
+        <div class="part-text">
+          <div class="part-title">
+            <span class="t5">Background:</span>
+            <h3 class="t3">Setting Multiple Lighting Schedules for Various Scenarios</h3>
+          </div>
+          <div class="grid-6-6">
+            <p class="body-text">To provide greater flexibility in lighting management, we enabled users to set multiple lighting schedules for each streetlight based on different needs. For example, users can set a regular lighting schedule that operates daily. Also, they can create "special schedules" for specific events, like, streetlights in shopping areas might stay brighter later into the night on New Year's Eve to accommodate celebrators.</p>
+            <img src="assets/images/sarea-city/sarea_schedule_background.webp" alt="Multiple lighting schedules concept" class="img-fluid">
+          </div>
+        </div>
+
+        <!-- Problem -->
+        <div class="part-text">
+          <div class="part-title">
+            <span class="t5">Problem:</span>
+            <h3 class="t3">The Misalignment of User Interface and Hardware Operation Logic Led to Confusion in Schedule Setting</h3>
+          </div>
+          <div class="grid-6-6">
+            <p class="body-text">In the existing platform, the lighting schedule was displayed as a box, enhancing the user's mental model of "scheduling" as setting a time slot. This differs from how the luminaire controllers actually operate. Since we aimed to apply multiple special scheduling to luminaire controllers to increase flexibility in lighting control, the existing display (box model) might cause confusion for users.</p>
+            <img src="assets/images/sarea-city/sarea_schedule_before.webp" alt="Existing schedule interface" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="part-lg">
+
+          <div class="part-text">
+            <div class="part-title">
+              <span class="t5">Design Solution:</span>
+              <h3 class="t3">Aligning User Interface with Hardware Logic for Clear and Accurate Scheduling</h3>
+            </div>
+          </div>
+
+          <!-- Solution 1 -->
+          <div style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+            <div class="h4-item text-col-8">
+              <span class="content-label">Solution 1</span>
+              <h4 class="t4">Setting "Timings" instead of "Time Slots"</h4>
+              <p class="body-text">To resolve this, we shifted from a time slot approach to a timing-based system, where users set specific times for lights to turn on or off. This way, users can clearly understand how the street light will behave.</p>
+            </div>
+            <video class="project-video" style="box-shadow: var(--shadow-default);" autoplay muted loop playsinline>
+              <source src="assets/videos/sarea-city/sarea_add-command-to-schedule.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <!-- Solution 2 -->
+          <div style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+            <div class="h4-item text-col-8">
+              <span class="content-label">Solution 2</span>
+              <h4 class="t4">Displaying Scheduling Details in Timing Lists instead of Time Slots</h4>
+              <p class="body-text">When users check the details of every schedule applied to each street light for troubleshooting, they would see a list of timings instead of time slots. This allowed users' mental model to align with hardware logic seamlessly, providing clarity and reducing scheduling errors.</p>
+            </div>
+            <img src="assets/images/sarea-city/sarea_schedule_after-2.webp" alt="New timing-based schedule interface" class="img-fluid">
+          </div>
+
+        </div><!-- /part-lg solutions -->
+
+      </section><!-- /challenge-02 -->
+
+      <hr class="divider">
+
+      <!-- ── CHALLENGE 03 ─────────────────────────────── -->
+      <section class="project-section" aria-labelledby="ch03-title">
+
+        <div class="section-title">
+          <span class="t5">Challenge 03</span>
+          <h2 class="t2" id="ch03-title">How might we build a design system that ensures consistency and scalability across current and future IoT solutions?</h2>
+        </div>
+
+        <!-- Strategy -->
+        <div class="part-text">
+          <div class="part-title">
+            <span class="t5">Design Strategy:</span>
+            <h3 class="t3">Simplicity for Future Adaptations</h3>
+          </div>
+          <div class="grid-6-6">
+            <p class="body-text">Sarea City was the first product of Sarea, the product series that contained Spark Technologies' IoT management platforms for different vertical domains.<br><br>Anticipating the need for a consistent design system across future products, I built the new design system with a flat and simple design style. This not only matched the logos but also ensured flexibility for upcoming adaptations, streamlining maintenance for the R&amp;D team and providing clear instructions for future updates.</p>
+            <img src="assets/images/sarea-city/sarea_design%20system_%20product-series.webp" alt="Sarea product series design system overview" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="part-lg">
+
+          <div class="part-text">
+            <div class="part-title">
+              <span class="t5">Design Solution:</span>
+              <h3 class="t3">Consistent Design System that Applies to Various Purposes</h3>
+            </div>
+          </div>
+
+          <!-- Solution 1 -->
+          <div class="grid-6-6">
+            <div class="h4-item">
+              <span class="content-label">Solution 1</span>
+              <h4 class="t4">Simplifying the Color Scheme to Reduce the Effort to Keep Consistency across Products</h4>
+              <p class="body-text">I used grass green as the primary color to match the logo. For the secondary color, I chose light yellowish orange, which not only created a visual hierarchy through varying color brightness but also provided sufficient contrast with the primary colors of most other products in Sarea product series. This strategic selection simplifies the application of the design system to other IoT platforms, reducing the effort required to keep consistency across products.</p>
+            </div>
+            <img src="assets/images/sarea-city/sarea_design%20system_color.webp" alt="Sarea City color system" class="img-fluid">
+          </div>
+
+          <!-- Solution 2 -->
+          <div style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+            <div class="h4-item text-col-8">
+              <span class="content-label">Solution 2</span>
+              <h4 class="t4">Dark Mode</h4>
+              <p class="body-text">While dark mode wasn't a primary focus for this project, we ensured the design aligns with the overall product series' standards by creating a dark mode color palette that directly references the default palette. Adjustments were made to saturation and color contrast to optimize readability and maintain clear differentiation between elements.</p>
+            </div>
+            <div class="img-ratio" style="aspect-ratio: 2370 / 898;">
+              <img src="assets/images/sarea-city/sarea_design%20system_dark%20mode.webp" alt="Sarea City dark mode design system">
+            </div>
+          </div>
+
+          <!-- Solution 3 -->
+          <div style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+            <div class="h4-item text-col-8">
+              <span class="content-label">Solution 3</span>
+              <h4 class="t4">UI Components in Different States</h4>
+              <p class="body-text">In Sarea City and future IoT products, UI components come in various states, from basic elements like buttons and input fields to specialized ones like map pins. To help frontend developers understand and use these components in different scenarios more efficiently, I created an exhaustive list of all their possible states and statuses.</p>
+            </div>
+            <div class="img-ratio" style="aspect-ratio: 2360 / 1214;">
+              <img src="assets/images/sarea-city/sarea_design%20system_components.webp" alt="UI components in all states">
+            </div>
+          </div>
+
+        </div><!-- /part-lg solutions -->
+
+      </section><!-- /challenge-03 -->
+
+      <hr class="divider">
+
+      <!-- ── IMPACT ────────────────────────────────────── -->
+      <section class="project-section" aria-labelledby="impact-title" style="gap: var(--gap-within-l);">
+
+        <div class="section-title">
+          <span class="t5">Impact</span>
+          <h2 class="t2" id="impact-title">Improved usability and future design efficiency</h2>
+        </div>
+
+        <video class="project-video" autoplay muted loop playsinline>
+          <source src="assets/videos/sarea-city/sarea_reels.mp4" type="video/mp4">
+        </video>
+
+        <div class="part">
+
+          <div class="grid-8-4">
+            <div class="h4-item">
+              <span class="content-label">Impact 1</span>
+              <h4 class="t4">Enhancing usability by bridging user behavior and hardware operation</h4>
+              <p class="body-text">We anticipated that by providing real-time feedback and aligning user expectations with hardware operations would increase users' confidence in the system and enhance the overall usability.</p>
+            </div>
+            <img src="assets/images/sarea-city/sarea_impact-1.webp" alt="Impact on usability" class="img-fluid">
+          </div>
+
+          <div class="grid-8-4">
+            <div class="h4-item">
+              <span class="content-label">Impact 2</span>
+              <h4 class="t4">Increasing efficiency in design &amp; development in future IoT solutions with design system</h4>
+              <p class="body-text">The UX design patterns and design system I created for this project were extensively applied across multiple custom IoT service projects. The design system and Figma component library significantly streamlined the design and frontend development processes in the following projects, enhancing overall product development efficiency.</p>
+            </div>
+            <img src="assets/images/sarea-city/sarea_impact-2.webp" alt="Impact on design efficiency" class="img-fluid">
+          </div>
+
+        </div>
+
+      </section><!-- /impact -->
+
+      <hr class="divider">
+
+    </div><!-- /.container -->
+
+    <!-- ── PROJECT NAV ──────────────────────────────── -->
+    <nav class="project-nav container" aria-label="Project navigation">
+      <div></div><!-- spacer: no previous project -->
+      <a href="aether.html" class="project-nav__btn">
+        <div class="project-nav__meta">
+          <span class="project-nav__label">Next Project:</span>
+          <span class="project-nav__name">Aether</span>
+        </div>
+        <i class="project-nav__arrow fa-solid fa-arrow-right" aria-hidden="true"></i>
+      </a>
+    </nav>
+
+  </main><!-- /project-main -->
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <p>Copyright &copy; <span id="footer-year"></span> Jasmine (Ting-Hsuan) Su</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

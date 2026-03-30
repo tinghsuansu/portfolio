@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aether — Jasmine Su</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/project.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="site-header__logo">Jasmine Su</a>
+      <nav class="site-header__nav" id="main-nav" aria-label="Main navigation">
+        <!-- <a href="#">About</a> -->
+        <a href="https://www.linkedin.com/in/ting-hsuan-su/" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+      <button class="site-header__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== MAIN ===================== -->
+  <main class="project-main">
+    <div class="container">
+
+      <!-- ── PROJECT HEADER ─────────────────────────── -->
+      <section class="project-header">
+
+        <div class="project-header__title-row">
+          <h1 class="project-header__h1">Aether</h1>
+          <p class="t4">Designing an AI research assistant that streamlines the research process while learning and evolving with researchers</p>
+        </div>
+
+        <div class="project-header__hero">
+          <img src="assets/images/aether/aether_hero.webp" alt="Aether AI research assistant overview">
+        </div>
+
+        <div class="project-header__info">
+          <div class="project-info-item">
+            <span class="t5">Project</span>
+            <span class="caption">Product design project for Honda Research Institute USA (via Carnegie Mellon University)</span>
+          </div>
+          <div class="project-info-item">
+            <span class="t5">My Contribution</span>
+            <span class="caption">Product Design<br>User Research<br>Prototyping<br>Usability Testing</span>
+          </div>
+          <div class="project-info-item">
+            <span class="t5">Team</span>
+            <span class="caption">1 UX Researcher<br>2 Product Designer<br>1 UX Engineer</span>
+          </div>
+          <div class="project-info-item">
+            <span class="t5">Timeline</span>
+            <span class="caption">Jan – Jul 2024 (7 months)</span>
+          </div>
+        </div>
+
+      </section><!-- /project-header -->
+
+      <hr class="divider">
+
+      <!-- ── PROJECT GOAL ────────────────────────────── -->
+      <section class="project-section" aria-labelledby="goal-title">
+
+        <div class="section-title">
+          <span class="t5">Project Goal:</span>
+          <h2 class="t2" id="goal-title">Gaining real-world insights in early human-AI teaming research to bridge the gap between research and product</h2>
+        </div>
+
+        <!-- Background -->
+        <div class="grid-6-6">
+          <p class="body-text">Honda Research Institute (HRI) drives Honda's long-term strategy through innovative research in areas like human-AI collaboration. To bridge the gap between research and real-world product development, HRI wants to increase early-stage field testing to collect feedback that informs better product design.<br><br>To achieve this, HRI wants to increase early-stage field testing, but transitioning from lab to real-world studies presents significant challenges for their researchers.</p>
+          <img src="assets/images/aether/aether_background.webp" alt="Honda Research Institute background" class="img-fluid">
+        </div>
+
+        <!-- Background challenges -->
+        <div class="part">
+          <div class="part-title">
+            <h3 class="t3">However, transitioning to real-world studies presents challenges:</h3>
+          </div>
+
+          <div class="grid-8-4" style="row-gap: var(--gap-margin-p);">
+            <div class="h4-item">
+              <span class="content-label">Challenge 1</span>
+              <h4 class="t4">Unique context for each research project</h4>
+              <p class="body-text">Human-AI teaming research is highly qualitative, with each project having its unique background and context, making study planning a time-consuming process.</p>
+            </div>
+            <img src="assets/images/aether/aether_background_challenge-1.webp" alt="Unique research context challenge" class="img-fluid">
+          </div>
+
+          <div class="grid-8-4" style="row-gap: var(--gap-margin-p);">
+            <div class="h4-item">
+              <span class="content-label">Challenge 2</span>
+              <h4 class="t4">Complex planning for real-world testing</h4>
+              <p class="body-text">Compared to lab testing, real-world settings involve more unpredictability—such as weather conditions, location regulations, and logistics—adding complexity to implementing an in-field study.</p>
+            </div>
+            <img src="assets/images/aether/aether_background_challenge-2.webp" alt="Complex planning challenge" class="img-fluid">
+          </div>
+        </div>
+
+        <!-- Design Overview -->
+        <div class="part">
+          <div class="section-title">
+            <span class="t5">Design Overview:</span>
+            <h2 class="t2">Aether: An AI research assistant that streamlines the research process while evolving with researchers</h2>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+            <p class="body-text text-col-8">When optimizing human-AI teaming research, Aether learns from the content researchers provide, refining its responses through continuous interaction to better align with the organization's research methodology and specific needs.</p>
+            <p class="body-text text-col-8">In this project, I conducted user research (including user interview and usability testing), defined the main user flow, and designed the user interface of this product.</p>
+            <video class="project-video" autoplay muted loop playsinline>
+              <source src="assets/videos/aether/aether_reels.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+      </section>
+
+      <hr class="divider">
+
+      <!-- ── USER RESEARCH ──────────────────────────── -->
+      <section class="project-section" aria-labelledby="research-title">
+
+        <div class="section-title">
+          <span class="t5">User Research:</span>
+          <h2 class="t2" id="research-title">Understanding Barriers to Real-World Studies</h2>
+        </div>
+
+        <!-- User archetype -->
+        <div class="grid-8-4">
+          <div class="part-text">
+            <div class="part-title">
+              <span class="t5">User Archetype:</span>
+              <h3 class="t3">Researchers with Strong Academic Background</h3>
+            </div>
+            <p class="body-text">Our target users are researchers at Honda Research Institute focused on human-AI teaming. They have strong academic backgrounds and are accustomed to rigorous research methodologies, but face growing pressure to bridge their findings with real-world product applications.</p>
+          </div>
+          <img src="assets/images/aether/aether_user-architype.webp" alt="User archetype — researchers" class="img-fluid">
+        </div>
+
+        <!-- Research method -->
+        <div style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+          <div class="part-text text-col-8">
+            <div class="part-title">
+              <span class="t5">Research Method:</span>
+              <h3 class="t3">Interviewing Researchers and Analyzing Their Workflow by Co-creating Research Maps</h3>
+            </div>
+            <p class="body-text">To better optimize the process of gaining real-world insights, our team interviewed 9 researchers at Honda Research Institute and 12 academic researchers at Carnegie Mellon University. We co-created research maps with them to visualize their entire research process and identify bottlenecks.</p>
+          </div>
+          <div class="media-caption">
+            <img src="assets/images/aether/aether_research_method.webp" alt="Research process maps co-created with researchers" class="img-fluid">
+            <span class="media-caption__text">Research process maps co-created with researchers during the interviews</span>
+          </div>
+        </div>
+
+        <!-- Key findings -->
+        <div class="part-lg">
+          <div class="part-text">
+            <div class="part-title">
+              <span class="t5">Key Findings:</span>
+              <h3 class="t3">Research is continuous, but planning and approvals slow progress</h3>
+            </div>
+          </div>
+
+          <div class="grid-6-6" style="align-items: start;">
+            <div class="h4-item">
+              <h4 class="t4">1. Background research is integral at every stage</h4>
+              <p class="body-text">Background research, including literature reviews, is integral at every stage. Researchers base decisions—ranging from study planning to data analysis—on their literature findings.</p>
+            </div>
+            <div class="h4-item">
+              <h4 class="t4">2. Study planning and approval are time-consuming</h4>
+              <p class="body-text">Writing a comprehensive study plan for real-world studies can take one week to a month, as it must align with the project timeline, budget, logistics, and safety regulations. Additionally, approval may take up to 2-3 months.</p>
+            </div>
+          </div>
+
+          <div class="media-caption">
+            <img src="assets/images/aether/aether_research_journey.webp" alt="Research journey map" class="img-fluid" style="max-width: var(--col-8); margin-inline: auto;">
+          </div>
+        </div>
+
+      </section>
+
+      <hr class="divider">
+
+      <!-- ── DESIGN CONCEPT ──────────────────────────── -->
+      <section class="project-section" aria-labelledby="concept-title">
+
+        <div class="section-title">
+          <span class="t5">Design Concept:</span>
+          <h2 class="t2" id="concept-title">Improving study planning processes with an internal AI system that learns from the researchers themselves</h2>
+        </div>
+
+        <!-- Ideation -->
+        <div class="grid-6-6">
+          <div class="part-text">
+            <div class="part-title">
+              <span class="t5">Ideation:</span>
+              <h3 class="t3">Labeling Data in Background Research, Using it to Plan Studies</h3>
+            </div>
+            <p class="body-text">Our initial concept was to allow researchers to input background research findings and study details into the planning system, enabling the AI to generate a draft plan for them. The AI learns from the labeled data researchers provide during their normal workflow.</p>
+          </div>
+          <img src="assets/images/aether/aether_concept_ideation.webp" alt="Aether concept ideation" class="img-fluid">
+        </div>
+
+        <!-- System structure -->
+        <div class="part">
+          <h3 class="t3">System Structure</h3>
+          <div class="grid-6-6" style="align-items: start;">
+            <div class="h4-item">
+              <h4 class="t4">1. Labeling data during background research</h4>
+              <p class="body-text">Researchers annotate key excerpts from papers and tag them with relevant research variables. This creates a structured knowledge base that the AI can learn from, contextualizing future study suggestions.</p>
+            </div>
+            <div class="h4-item">
+              <h4 class="t4">2. Using the labeled data for study planning</h4>
+              <p class="body-text">When planning a study, the AI draws on the labeled background research to generate relevant suggestions for study variables, protocols, and logistical considerations — creating a draft plan aligned with the researcher's established context.</p>
+            </div>
+          </div>
+          <img src="assets/images/aether/aether_concept_structure.webp" alt="Aether system structure diagram" class="img-fluid">
+        </div>
+
+      </section>
+
+      <hr class="divider">
+
+      <!-- ── CHALLENGE 01 ─────────────────────────────── -->
+      <section class="project-section" aria-labelledby="ch01-title">
+
+        <div class="section-title">
+          <span class="t5">Challenge 01</span>
+          <h2 class="t2" id="ch01-title">How might we label data in the background research process seamlessly?</h2>
+        </div>
+
+        <!-- Strategy -->
+        <div class="grid-8-4">
+          <div class="part-text">
+            <div class="part-title">
+              <span class="t5">Design Strategy:</span>
+              <h3 class="t3">Let Researchers Continue Their Usual Process in Aether</h3>
+            </div>
+            <p class="body-text">During background research, researchers review and synthesize complex papers to extract key points. Rather than asking them to change their workflow, Aether integrates annotation directly into their existing process — letting them highlight, tag, and synthesize within a familiar reading environment.</p>
+          </div>
+          <img src="assets/images/aether/aether_challenge-01_strategy.webp" alt="Challenge 01 design strategy" class="img-fluid">
+        </div>
+
+        <div class="part-lg">
+
+          <div class="part-text">
+            <div class="part-title">
+              <span class="t5">Design Solution:</span>
+              <h3 class="t3">Streamlining Annotation and Synthesis to Boost Researcher Adoption</h3>
+            </div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+            <div class="h4-item text-col-8">
+              <span class="content-label">Solution 1</span>
+              <h4 class="t4">Annotate the Papers and Extract Key Findings</h4>
+              <p class="body-text">Researchers can select excerpts from the papers to annotate and tag with relevant variables. Aether automatically extracts and organizes these findings into a structured database, building a labeled knowledge base without disrupting the researcher's reading flow.</p>
+            </div>
+            <video class="project-video" autoplay muted loop playsinline>
+              <source src="assets/videos/aether/aether_BGR_Annotate.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+            <div class="h4-item text-col-8">
+              <span class="content-label">Solution 2</span>
+              <h4 class="t4">Synthesize Research Findings through Visualization</h4>
+              <p class="body-text">In addition, researchers can use the virtual whiteboard space to visualize any recurring themes or patterns across papers. This synthesis step helps Aether understand higher-level research themes, further improving the quality of AI-generated study plans.</p>
+            </div>
+            <video class="project-video" autoplay muted loop playsinline>
+              <source src="assets/videos/aether/aether_BGR_synthesize.mp4" type="video/mp4">
+            </video>
+          </div>
+
+        </div>
+
+      </section>
+
+      <hr class="divider">
+
+      <!-- ── CHALLENGE 02 ─────────────────────────────── -->
+      <section class="project-section" aria-labelledby="ch02-title">
+
+        <div class="section-title">
+          <span class="t5">Challenge 02</span>
+          <h2 class="t2" id="ch02-title">How might we use the labeled data to make study planning easier?</h2>
+        </div>
+
+        <!-- Strategy -->
+        <div style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+          <div class="part-text text-col-8">
+            <div class="part-title">
+              <span class="t5">Design Strategy:</span>
+              <h3 class="t3">Planning Studies with Labeled Data from Background Research and the Variables</h3>
+            </div>
+            <p class="body-text">Before planning, researchers need to enter the variables to the modular component as the context of the study they are going to plan. These variables — such as participants, environment, and task complexity — serve as inputs that Aether uses to generate a relevant and structured study plan draft.</p>
+          </div>
+          <img src="assets/images/aether/Ather_challenge-02_strategy.webp" alt="Challenge 02 design strategy — variable inputs" class="img-fluid">
+        </div>
+
+        <div class="part-lg">
+
+          <div class="part-text">
+            <div class="part-title">
+              <span class="t5">Design Solution:</span>
+              <h3 class="t3">Automating the Logistical Considerations with LLM</h3>
+            </div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+            <div class="h4-item text-col-8">
+              <span class="content-label">Solution 1</span>
+              <h4 class="t4">Generate a Draft Plan with LLM</h4>
+              <p class="body-text">Based on the variables entered by the researchers and information gathered from background research, Aether can generate the first draft of the plan — including suggested protocols, participant criteria, and logistical considerations — giving researchers a structured starting point.</p>
+            </div>
+            <video class="project-video" autoplay muted loop playsinline>
+              <source src="assets/videos/aether/aether_Planning_draft-plan.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+            <div class="h4-item text-col-8">
+              <span class="content-label">Solution 2</span>
+              <h4 class="t4">Edit the Draft Plan with Aether's Suggestion</h4>
+              <p class="body-text">When the researchers are not sure about a specific variable, Aether can make new recommendations based on the context and the labeled background research. Researchers can accept, modify, or reject each suggestion, allowing the AI to learn from their preferences over time.</p>
+            </div>
+            <video class="project-video" autoplay muted loop playsinline>
+              <source src="assets/videos/aether/aether_Planning_suggestion.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+            <div class="h4-item text-col-8">
+              <span class="content-label">Solution 3</span>
+              <h4 class="t4">Comprehensive Consideration of the Interdependencies between the Variables</h4>
+              <p class="body-text">Aether also considers interdependencies between each variable, reminding researchers of how changes in one module might affect others. This holistic view helps prevent oversights in complex, multi-variable real-world studies.</p>
+            </div>
+            <video class="project-video" autoplay muted loop playsinline>
+              <source src="assets/videos/aether/aether_Planning_cohesive.mp4" type="video/mp4">
+            </video>
+          </div>
+
+        </div>
+
+      </section>
+
+      <hr class="divider">
+
+      <!-- ── OUTCOME ─────────────────────────────────── -->
+      <section class="project-section" aria-labelledby="outcome-title">
+
+        <div class="section-title">
+          <span class="t5">Outcome</span>
+          <h2 class="t2" id="outcome-title">Scaling research efficiency through AI-assisted workflows</h2>
+        </div>
+
+        <!-- Expected Outcome -->
+        <div style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+          <div class="part-text">
+            <div class="part-title">
+              <span class="t5">Expected Outcome</span>
+              <h3 class="t3">Growing an AI System that Helps the Organization Grow</h3>
+            </div>
+            <p class="body-text">When optimizing human-AI teaming research, Aether learns from the content researchers provide, refining its responses through continuous interaction. Over time, Aether will evolve into an "expert research assistant," boosting research efficiency across Honda Research Institute.</p>
+          </div>
+          <img src="assets/images/aether/aether_outcome.webp" alt="Aether expected outcome — system growth" class="img-fluid">
+        </div>
+
+        <!-- Client's Feedback -->
+        <div class="part-lg">
+          <div class="part-text">
+            <div class="part-title">
+              <span class="t5">Client's Feedback</span>
+              <h3 class="t3">Validated Value and Adoption Potential of Aether</h3>
+            </div>
+          </div>
+          <div class="grid-6-6" style="align-items: start;">
+            <div class="h4-item">
+              <span class="content-label">Feedback from the Target Users (Researcher)</span>
+              <h4 class="t4">"It's always good to have a starting point like [the AI generated draft plan]."</h4>
+              <p class="body-text">We conducted prototype testing with researchers at Honda Research Institute to validate Aether's design. The feedback was positive, with researchers recognizing Aether's potential to streamline research workflows through its innovative background research tool and AI-generated draft study plans. These insights confirmed the need for a tool that can accelerate both research planning and execution.</p>
+            </div>
+            <div class="h4-item">
+              <span class="content-label">Feedback from our Client (Honda Research Institute)</span>
+              <h4 class="t4">"The framework of AI integration is helpful for us to adopt new methodologies"</h4>
+              <p class="body-text">Beyond Aether's potential for enhancing research efficiency, Honda Research Institute was particularly impressed by the framework we developed for implementing AI solutions internally. By seamlessly integrating AI systems into their existing processes, Honda Research Institute can drive innovative technological advancements more efficiently, in an effortless way.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Future Work -->
+        <div class="part-lg">
+          <div class="part-text text-col-8">
+            <div class="part-title">
+              <span class="t5">Future Work</span>
+              <h3 class="t3">Opportunities to Enhance Usability and Trust</h3>
+            </div>
+            <p class="body-text">While researchers were excited about Aether's potential, they also provided valuable feedback on areas for improvement, which helped shape our future development roadmap:</p>
+          </div>
+          <div class="grid-6-6" style="align-items: start;">
+            <div class="h4-item">
+              <span class="content-label">Feedback from the Target Users (Researcher)</span>
+              <h4 class="t4">1. Enhancing Product Customizability to Fit Various User Needs</h4>
+              <p class="body-text">Researchers at HRI have diverse workflows and tool preferences. To increase Aether's adoption, we recognized the need for a modular and flexible design that can seamlessly integrate with existing research tools. For example, Aether could be a Google Scholar plugin enabling direct information extraction. This way, Aether could be an intuitive extension of researchers' current methodologies rather than an invasive replacement.</p>
+            </div>
+            <div class="h4-item">
+              <span class="content-label">Feedback from our Client (Honda Research Institute)</span>
+              <h4 class="t4">2. Improving AI Explainability to Increase Trust</h4>
+              <p class="body-text">During testing, researchers expressed uncertainty about the AI-generated study plans due to limited visibility into the decision-making process. We aim to address this by developing a more transparent approach that reveals the AI's reasoning, enabling researchers to understand and trust the generated recommendations.</p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <hr class="divider">
+
+      <!-- ── REFLECTION ──────────────────────────────── -->
+      <section class="project-section" aria-labelledby="reflection-title">
+
+        <div class="section-title">
+          <span class="t5">Reflection</span>
+          <h2 class="t2" id="reflection-title">The importance of system thinking in AI product design</h2>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+          <p class="body-text text-col-8">Reflecting on this project, one of the most critical challenges was understanding why researchers would adopt Aether over their existing methods. This required not just designing a usable tool, but thinking holistically about how Aether fits within the researchers' entire ecosystem — their workflows, institutional processes, and long-term research goals.</p>
+          <p class="body-text text-col-8">From this experience, I learned the importance of system thinking in future-facing product design. When designing AI-powered tools, it is essential to consider not just the immediate interaction, but the broader value exchange between the AI system, the users, and the organization over time.</p>
+          <div class="media-caption">
+            <img src="assets/images/aether/aether_reflection.webp" alt="System map visualizing Aether's service system" class="img-fluid">
+            <span class="media-caption__text">The system map I created to visualize the relationship and value flow of the Aether service system</span>
+          </div>
+        </div>
+
+      </section>
+
+      <hr class="divider">
+
+    </div><!-- /.container -->
+
+    <!-- ── PROJECT NAV ──────────────────────────────── -->
+    <nav class="project-nav container" aria-label="Project navigation">
+      <a href="sarea-city.html" class="project-nav__btn project-nav__btn--prev">
+        <div class="project-nav__meta">
+          <span class="project-nav__label">Previous Project:</span>
+          <span class="project-nav__name">Sarea City</span>
+        </div>
+        <i class="project-nav__arrow fa-solid fa-arrow-left" aria-hidden="true"></i>
+      </a>
+      <a href="fertility-center.html" class="project-nav__btn">
+        <div class="project-nav__meta">
+          <span class="project-nav__label">Next Project:</span>
+          <span class="project-nav__name">Fertility Center</span>
+        </div>
+        <i class="project-nav__arrow fa-solid fa-arrow-right" aria-hidden="true"></i>
+      </a>
+    </nav>
+
+  </main><!-- /project-main -->
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <p>Copyright &copy; <span id="footer-year"></span> Jasmine (Ting-Hsuan) Su</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

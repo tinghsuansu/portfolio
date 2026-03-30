@@ -1,0 +1,391 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IntelliRide — Jasmine Su</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/project.css">
+  <!-- Font Awesome for envelope + LinkedIn icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="site-header__logo">Jasmine Su</a>
+      <nav class="site-header__nav" id="main-nav" aria-label="Main navigation">
+        <!-- <a href="#">About</a> -->
+        <a href="https://www.linkedin.com/in/ting-hsuan-su/" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+      <button class="site-header__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== MAIN ===================== -->
+  <main class="project-main">
+    <div class="container">
+
+      <!-- ── PROJECT HEADER ── -->
+      <header class="project-header">
+
+        <!-- Title row -->
+        <div class="project-header__title-row">
+          <h1 class="project-header__h1">IntelliRide</h1>
+          <p class="t4">Integrating physical and digital controls for the semi-autonomous electric bike to ensure a seamless commuting experience</p>
+        </div>
+
+        <!-- Hero image -->
+        <div class="project-header__hero">
+          <img src="assets/images/intelliride/bike_hero.webp" alt="IntelliRide — Electric Bike Dashboard & Controls">
+        </div>
+
+        <!-- Info row -->
+        <div class="project-header__info">
+          <div class="project-info-item">
+            <p class="t5">Project</p>
+            <p class="body-text">UX design project at Carnegie Mellon University</p>
+          </div>
+          <div class="project-info-item">
+            <p class="t5">My Contribution</p>
+            <p class="body-text">Product Design<br>UX Design<br>Prototyping<br>Usability Testing</p>
+          </div>
+          <div class="project-info-item">
+            <p class="t5">Team</p>
+            <p class="body-text">2 Product Designers</p>
+          </div>
+          <div class="project-info-item">
+            <p class="t5">Timeline</p>
+            <p class="body-text">Oct – Dec 2023 (7 weeks)</p>
+          </div>
+        </div>
+
+      </header>
+
+      <hr class="divider" role="separator">
+
+      <!-- ══════════════════════════════════════════════
+           SECTION: Project Goal + User Research + Design Overview
+           ══════════════════════════════════════════════ -->
+      <section class="project-section" aria-label="Project Goal and Design Overview">
+
+        <!-- Project Goal + User Research -->
+        <div class="part-lg">
+
+          <!-- Section title + description -->
+          <div style="display: flex; flex-direction: column; gap: var(--gap-within-s);">
+            <div class="section-title">
+              <p class="t5">Project Goal:</p>
+              <h2 class="t2">Intuitive autonomous bike control</h2>
+            </div>
+            <p class="body-text text-col-8">IntelliRide is a conceptual semi-autonomous electric bike featuring Level 3 driving automation. In this case study, I will mainly focus on how we designed the interaction between users and the autonomous system, both physically and on screens.</p>
+          </div>
+
+          <!-- User Research: text (8fr) + image (4fr) -->
+          <div class="grid-8-4">
+            <div class="part-text">
+              <div class="part-title">
+                <p class="t5">User Research:</p>
+                <h3 class="t3">Exploring bikers' needs</h3>
+              </div>
+              <p class="body-text">At the beginning of the project, we conducted guerrilla research and interviewed several bikers around the campus to understand their pain points on biking. We also observed e-bike parking on the streets and visited a bike shop in Pittsburgh to learn more about the existing e-bike design and market.</p>
+            </div>
+            <img src="assets/images/intelliride/bike_needs.webp" alt="User research findings" class="img-fluid">
+          </div>
+
+          <!-- Key findings -->
+          <div style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+            <p class="t3">People find electric bikes convenient, but they struggle with complex controls and trust in autonomy.</p>
+            <div class="grid-6-6" style="align-items: start;">
+              <div class="h4-item">
+                <p class="t6 content-label">Finding 01</p>
+                <h4 class="t4">1. Easier Control</h4>
+                <p class="body-text">Many commuters use e-bikes to commute because they are faster and effortless. However, many of them find e-bike controls complex and overwhelming.</p>
+              </div>
+              <div class="h4-item">
+                <p class="t6 content-label">Finding 02</p>
+                <h4 class="t4">2. Accept the New System</h4>
+                <p class="body-text">People are generally hesitant about giving full control to the autonomous system, thinking it might not be "smart" enough to deal with every situation during the ride.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Design Overview -->
+        <div style="display: flex; flex-direction: column; gap: var(--gap-within-s);">
+
+          <div class="section-title">
+            <p class="t5">Design Overview:</p>
+            <h2 class="t2">Integrating physical and digital controls to ensure a seamless commuting experience</h2>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+            <p class="body-text">We designed a flexible control in autonomous mode that enables riders to choose the amount of control they would like to have at any point during the autonomous mode. The integrated physical controls make adjustments more intuitive and safer.</p>
+            <video class="project-video" autoplay muted loop playsinline>
+              <source src="assets/videos/intelliride/bike_reels.mp4" type="video/mp4">
+            </video>
+          </div>
+
+        </div>
+
+      </section>
+
+      <hr class="divider" role="separator">
+
+      <!-- ══════════════════════════════════════════════
+           SECTION: Challenge 01 — Cognitive Load
+           ══════════════════════════════════════════════ -->
+      <section class="project-section" aria-label="Challenge 01">
+
+        <div class="section-title">
+          <p class="t5">Challenge 01</p>
+          <h2 class="t2">How might we reduce cognitive load for users while riding?</h2>
+        </div>
+
+        <!-- Design Strategy -->
+        <div class="part-text text-col-8">
+          <div class="part-title">
+            <p class="t5">Design Strategy:</p>
+            <h3 class="t3">Simplifying Displays and Controls</h3>
+          </div>
+          <p class="body-text">From the interview with staff from a bike shop, we learned that e-bike controls can be overwhelming for users due to their complexity. Therefore, it is essential to (1) present bike status information intuitively to enhance user understanding and (2) organize controls based on ergonomic principles, facilitating easier adjustments for users.</p>
+        </div>
+
+        <!-- Design Solution -->
+        <div class="part-lg">
+
+          <div class="part-text">
+            <div class="part-title">
+              <p class="t5">Design Solution:</p>
+              <h3 class="t3">Ergonomic Information Display and Interaction</h3>
+            </div>
+          </div>
+
+          <!-- Solution 1 -->
+          <div style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+            <div class="h4-item text-col-8">
+              <p class="t6 content-label">Solution 1</p>
+              <h4 class="t4">Optimizing Information Placement for Quick Glances</h4>
+              <p class="body-text">We placed the screen lower on the headset to keep the rider's view clear. To make key info like speed, battery, and autonomous status easy to check, we positioned it in the top bar of the dashboard for quick glances while riding.</p>
+            </div>
+            <div class="img-ratio" style="aspect-ratio: 1181/500;">
+              <img src="assets/images/intelliride/bike_cog%20load_strategy.webp" alt="Information placement strategy" class="img-fluid">
+            </div>
+          </div>
+
+          <!-- Solution 2 -->
+          <div style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+            <div class="h4-item text-col-8">
+              <p class="t6 content-label">Solution 2</p>
+              <h4 class="t4">Clear Mode Indication with Color Coding</h4>
+              <p class="body-text">We used a white border for manual mode and a green border for autonomous mode, allowing riders to quickly recognize their current mode at a glance.</p>
+            </div>
+            <video class="project-video" autoplay muted loop playsinline>
+              <source src="assets/videos/intelliride/bike_color-code.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <!-- Solution 3 -->
+          <div style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+            <div class="h4-item text-col-8">
+              <p class="t6 content-label">Solution 3</p>
+              <h4 class="t4">Ergonomic Button Placement for Safe Control</h4>
+              <p class="body-text">We positioned all buttons within thumb's reach on both sides, so riders can access controls without letting go of the grips.</p>
+            </div>
+            <div class="img-ratio" style="aspect-ratio: 1181/400;">
+              <img src="assets/images/intelliride/bike_cog%20load_solution-2.webp" alt="Ergonomic button placement" class="img-fluid">
+            </div>
+            <div class="grid-6-6" style="align-items: start;">
+              <p class="body-text"><span class="body-bold">Left</span><br>1. Blinker<br>2. Autonomous Button: As the main feature of the semi-autonomous bike, the "Autonomous" button is large and easy to reach.</p>
+              <p class="body-text"><span class="body-bold">Right</span><br>3. Assistance level<br>4. Trackpad: We designed a trackpad that enables users to navigate the touchscreen without lifting their hands from the grip. The cursor would snap to clickable elements for easier control.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <hr class="divider" role="separator">
+
+      <!-- ══════════════════════════════════════════════
+           SECTION: Challenge 02 — Autonomy Acceptance
+           ══════════════════════════════════════════════ -->
+      <section class="project-section" aria-label="Challenge 02">
+
+        <div class="section-title">
+          <p class="t5">Challenge 02</p>
+          <h2 class="t2">How might we make the autonomous system more acceptable to users?</h2>
+        </div>
+
+        <!-- Design Strategy -->
+        <div style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+          <div class="part-text text-col-8">
+            <div class="part-title">
+              <p class="t5">Design Strategy:</p>
+              <h3 class="t3">Balancing Autonomy with User Control</h3>
+            </div>
+            <p class="body-text">We assumed the autonomous system would control the steering according to the route it set and adjust speed based on the surroundings and the actions (e.g., go at the green light, stop at the red light, and slow down when turning).<br><br>In our approach to autonomy, we aimed to empower users with a sense of control even in fully autonomous mode. By defining individual spectrums for crucial bike operations such as acceleration, steering, and braking, we established a dynamic system where the autonomous influence adjusts based on user inputs. This allows users to override specific aspects of autonomous operation at any given moment, ensuring a seamless and flexible riding experience.</p>
+          </div>
+          <div class="img-ratio" style="aspect-ratio: 1181/279;">
+            <img src="assets/images/intelliride/bike_auto_strategy.webp" alt="Autonomy design strategy" class="img-fluid">
+          </div>
+        </div>
+
+        <!-- Design Solution -->
+        <div class="part-lg">
+
+          <div class="part-text">
+            <div class="part-title">
+              <p class="t5">Design Solution:</p>
+              <h3 class="t3">Flexible Autonomous Mode</h3>
+            </div>
+          </div>
+
+          <!-- Solution 1 -->
+          <div style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+            <div class="h4-item text-col-8">
+              <p class="t6 content-label">Solution 1</p>
+              <h4 class="t4">Customizable Autonomous Mode for Flexibility</h4>
+              <p class="body-text">When users press the "Autonomous" button, they can choose between full navigation or speed control only.</p>
+            </div>
+            <video class="project-video" autoplay muted loop playsinline>
+              <source src="assets/videos/intelliride/bike_start-auto.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <!-- Autopilot / Smart Speed side-by-side -->
+          <div class="grid-6-6" style="align-items: stretch; row-gap: var(--gap-within-l);">
+            <div class="col-media-bottom" style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+              <p class="body-text"><strong>Autopilot</strong><br>If the users choose "Autopilot," they can select saved destinations to start moving immediately or search for their destination.</p>
+              <video class="project-video" autoplay muted loop playsinline>
+                <source src="assets/videos/intelliride/bike_autopilot.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="col-media-bottom" style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+              <p class="body-text"><strong>Smart Speed Control</strong><br>If the users choose "Speed Control Only," the system will only control the speed, and the users will steer manually.</p>
+              <video class="project-video" autoplay muted loop playsinline>
+                <source src="assets/videos/intelliride/bike_speed-control.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <!-- Solution 2 -->
+          <div style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+            <div class="h4-item text-col-8">
+              <p class="t6 content-label">Solution 2</p>
+              <h4 class="t4">Take Over and Override Autonomous Mode</h4>
+              <p class="body-text">If the system detects a situation requiring user intervention, a takeover message appears with clear instructions, helping riders override the system seamlessly and avoid potential accidents caused by users' nervousness.</p>
+            </div>
+            <div class="img-ratio" style="aspect-ratio: 1181/512;">
+              <img src="assets/images/intelliride/bike_auto_solution-4.webp" alt="Take over and override autonomous mode" class="img-fluid">
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <hr class="divider" role="separator">
+
+      <!-- ══════════════════════════════════════════════
+           SECTION: Design Iteration
+           ══════════════════════════════════════════════ -->
+      <section class="project-section" aria-label="Design Iteration">
+
+        <div class="section-title">
+          <p class="t5">Design Iteration</p>
+          <h2 class="t2">Testing the Riding Experience with Prototypes</h2>
+        </div>
+
+        <!-- Dashboard Prototype -->
+        <div class="part-lg">
+          <div class="part-title">
+            <p class="t5">Dashboard Prototype:</p>
+            <h3 class="t3">Simulating the Autonomous mode</h3>
+          </div>
+          <div class="grid-6-6" style="align-items: stretch; row-gap: var(--gap-within-l);">
+            <div class="col-media-bottom" style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+              <div class="h4-item">
+                <h4 class="t4">1. Low-fidelity Paper Prototype</h4>
+                <p class="body-text">For the first round of testing, we built a physical prototype with paper and cardboard to validate our concepts of the whole riding process. We installed our paper prototype on an office chair to move the participants when they activated the autonomous mode, simulating the riding experience with the autopilot system.</p>
+              </div>
+              <img src="assets/images/intelliride/bike_iteration-dashboard-1.webp" alt="Low-fidelity paper prototype" class="img-fluid">
+            </div>
+            <div class="col-media-bottom" style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+              <div class="h4-item">
+                <h4 class="t4">2. High-fidelity Digital Prototype</h4>
+                <p class="body-text">Once we validated the user flow with the paper prototype, we refined our design and created a high-fidelity digital prototype for user interaction testing. Using the Wizard of Oz method, we simulated both autonomous mode and scenarios requiring users to interact with the digital dashboard using physical controls.</p>
+              </div>
+              <img src="assets/images/intelliride/bike_iteration-dashboard-2.webp" alt="High-fidelity digital prototype" class="img-fluid">
+            </div>
+          </div>
+        </div>
+
+        <!-- Physical Control Prototype -->
+        <div class="part-lg">
+          <div class="part-title">
+            <p class="t5">Physical Control Prototype:</p>
+            <h3 class="t3">Refining the Ergonomics</h3>
+          </div>
+
+          <!-- 1. Distributing the Controls -->
+          <div style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+            <div class="h4-item text-col-8">
+              <h4 class="t4">1. Distributing the Controls</h4>
+              <p class="body-text">To enhance user control while riding, we planned control placement to ensure accessibility while gripping the handlebars. We began by sketching a diagram (image 1), organizing controls into logical groupings on either side. Then, we built a paper prototype (image 2) for testing user comprehension without extra guidance.</p>
+            </div>
+            <div class="grid-6-6">
+              <img src="assets/images/intelliride/bike_iteration-physical-1.webp" alt="Control placement sketch" class="img-fluid">
+              <img src="assets/images/intelliride/bike_iteration-physical-2.webp" alt="Physical prototype testing" class="img-fluid">
+            </div>
+          </div>
+
+          <!-- 2. Iterating Control Size -->
+          <div style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+            <div class="h4-item text-col-8">
+              <h4 class="t4">2. Iterating Control Size</h4>
+              <p class="body-text">During the usability testing, we realized that the size of the controls was too large for people with smaller hands (image 3). Subsequently, we iterated on the control size, refining them through sketches (image 4) and clay models (image 5) to enhance the ergonomic design.</p>
+            </div>
+            <div class="grid-3-eq">
+              <img src="assets/images/intelliride/bike_iteration-physical-3.webp" alt="Control size issue" class="img-fluid">
+              <img src="assets/images/intelliride/bike_iteration-physical-4.webp" alt="Refined control sketches" class="img-fluid">
+              <img src="assets/images/intelliride/bike_iteration-physical-5.webp" alt="Clay model iteration" class="img-fluid">
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <hr class="divider" role="separator">
+
+    </div><!-- /.container -->
+
+    <!-- ── PROJECT NAV ── -->
+    <nav class="project-nav container" aria-label="Project navigation">
+      <a href="fertility-center.html" class="project-nav__btn project-nav__btn--prev">
+        <div class="project-nav__meta">
+          <span class="project-nav__label">Previous Project:</span>
+          <span class="project-nav__name">Fertility Center</span>
+        </div>
+        <i class="project-nav__arrow fa-solid fa-arrow-left" aria-hidden="true"></i>
+      </a>
+      <div></div><!-- spacer: no next project -->
+    </nav>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <p>Copyright &copy; <span id="footer-year"></span> Jasmine (Ting-Hsuan) Su</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

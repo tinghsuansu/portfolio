@@ -1,0 +1,395 @@
+/* ============================================================
+   PROJECT.CSS — Shared styles for all case study pages
+   Depends on: variables.css, global.css
+   ============================================================ */
+
+/* ============================================================
+   PAGE WRAPPER
+   ============================================================ */
+.project-main .container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-between-sections);   /* 120px between major sections */
+}
+
+/* ============================================================
+   PROJECT HEADER
+   pt: gap_between_parts (80px) | inner gap: gap_between_parts (80px)
+   ============================================================ */
+.project-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-between-parts);
+  padding-top: var(--gap-between-parts);
+}
+
+/* Title row: 6fr : 6fr */
+.project-header__title-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--col-gap);
+  align-items: center;
+}
+
+.project-header__h1 {
+  font-family: var(--font-title);
+  font-size: var(--fs-h1);
+  font-weight: 600;
+  line-height: var(--lh-title);
+  letter-spacing: var(--ls-tight);
+  color: var(--color-text-normal);
+}
+
+/* Hero image: full width, proportional height */
+.project-header__hero {
+  width: 100%;
+  aspect-ratio: 59/30;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.project-header__hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Info row: 4 equal columns (each ~3 cols wide) */
+.project-header__info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--col-gap);
+}
+
+.project-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-margin-h5);
+}
+
+/* ============================================================
+   SECTION STRUCTURE
+   gap_between_parts (80px) between all direct children
+   ============================================================ */
+.project-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-between-parts);
+}
+
+/* Section title: small label (T5) + large heading (T2) */
+.section-title {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-margin-h5);
+}
+
+/* Part title: small label (T5) + subheading (T3) */
+.part-title {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-margin-h5);
+}
+
+/* Part text block: title + body paragraph */
+.part-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-margin-h3);
+}
+
+/* ============================================================
+   CONTENT CONTAINERS
+   Within a section, content is grouped in:
+   .part     → gap_within_s (24px) — tighter, within a single topic
+   .part-lg  → gap_within_l (64px) — looser, between sub-topics
+   ============================================================ */
+.part {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-within-s);
+}
+
+.part-lg {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-within-l);
+}
+
+/* ============================================================
+   H4 LIST ITEM  (Problem 1 / Solution 1 pattern)
+   label (T6 subtle) + heading (T4) + body
+   ============================================================ */
+.h4-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-margin-h5);
+}
+
+.content-label {
+  font-family: var(--font-title);
+  font-size: var(--fs-h6);
+  font-weight: 600;
+  line-height: var(--lh-title);
+  letter-spacing: var(--ls-tight);
+  color: var(--color-text-normal);  /* h2 section-title & h3 part-text labels */
+}
+
+/* h4 list-item tag is text/subtle (Figma: project_h4_list-text content) */
+.h4-item .content-label {
+  color: var(--color-text-subtle);
+}
+
+/* ============================================================
+   MEDIA + CAPTION
+   ============================================================ */
+.media-caption {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-margin-h5);
+  align-items: center;
+}
+
+.media-caption__text {
+  font-family: var(--font-content);
+  font-size: var(--fs-caption);
+  font-weight: 400;
+  line-height: var(--lh-caption);
+  color: var(--color-text-subtle);
+  text-align: center;
+}
+
+/* ============================================================
+   IMAGE CONTAINERS
+   ============================================================ */
+
+/* Fluid image — fills parent width, maintains aspect ratio */
+.img-fluid {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* Simple image wrapper — no clipping, no background */
+.img-box {
+  width: 100%;
+}
+
+.img-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Aspect-ratio image container — height is proportional to width */
+.img-ratio {
+  width: 100%;
+  overflow: hidden;
+}
+
+.img-ratio img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Video element — fills width, height auto from intrinsic ratio */
+.project-video {
+  width: 100%;
+  display: block;
+}
+
+/* ============================================================
+   VIDEO PLACEHOLDER
+   Use aspect-ratio inline: style="aspect-ratio: 16/9"
+   ============================================================ */
+.video-ph {
+  width: 100%;
+  background-color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-content);
+  font-size: var(--fs-caption);
+  color: var(--color-text-subtle);
+}
+
+/* ============================================================
+   GRID LAYOUTS (fr-based, always proportional)
+   ============================================================ */
+.grid-6-6 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--col-gap);
+  align-items: center;
+}
+
+.grid-8-4 {
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  gap: var(--col-gap);
+  align-items: center;
+}
+
+.grid-7-5 {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  gap: var(--col-gap);
+  align-items: start;
+}
+
+.grid-3-eq {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--col-gap);
+  align-items: start;
+}
+
+.grid-4-eq {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--col-gap);
+  align-items: start;
+}
+
+.grid-6-eq {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: var(--col-gap);
+  align-items: start;
+}
+
+/* Text + image/media side-by-side pair:
+   collapses on mobile with gap-margin-p (not gap-within-s) */
+.grid-media {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--col-gap);
+  align-items: center;
+}
+
+/* Grid cell: stacks text at top, media at bottom.
+   Apply to each cell's inner container when the grid uses
+   align-items: stretch, so equal-height columns let the
+   media bottom-align across both sides. */
+.col-media-bottom {
+  height: 100%;
+}
+.col-media-bottom > :last-child {
+  margin-top: auto;
+}
+
+/* ============================================================
+   TEXT WIDTH CONSTRAINTS
+   Used when a text block sits in a full-width flex-col
+   and should be max 8 or 6 columns wide.
+   ============================================================ */
+.text-col-8 { max-width: var(--col-8); }  /* 780px */
+.text-col-6 { max-width: var(--col-6); }  /* 580px */
+
+/* ============================================================
+   PROJECT NAV FOOTER  (Next Project →)
+   ============================================================ */
+.project-nav {
+  padding-block: var(--gap-between-sections);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-nav__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--color-text-normal);
+  transition: opacity 0.2s ease;
+}
+
+.project-nav__btn:hover { opacity: 0.7; }
+
+.project-nav__meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.project-nav__label {
+  font-family: var(--font-title);
+  font-size: var(--fs-h6);
+  font-weight: 600;
+  line-height: var(--lh-title);
+  letter-spacing: var(--ls-tight);
+  color: var(--color-text-subtle);
+}
+
+.project-nav__name {
+  font-family: var(--font-content);
+  font-size: var(--fs-p);
+  font-weight: 600;
+  line-height: var(--lh-p);
+  color: var(--color-text-normal);
+}
+
+.project-nav__arrow {
+  font-size: 20px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+/* Previous button — arrow on the left */
+.project-nav__btn--prev {
+  flex-direction: row-reverse;
+}
+
+.project-nav__btn--prev .project-nav__meta {
+  align-items: flex-start;
+}
+
+/* .project-nav lives inside .project-main and has class "container", so
+   .project-main .container sets flex-direction:column on it. Override back to row. */
+.project-main .project-nav {
+  flex-direction: row;
+  gap: 0;
+}
+
+/* ============================================================
+   RESPONSIVE — Mobile (≤ 768px)
+   ============================================================ */
+@media (max-width: 768px) {
+
+  /* Header */
+  .project-header__title-row {
+    grid-template-columns: 1fr;
+  }
+
+  .project-header__info {
+    grid-template-columns: 1fr;   /* each info field full-width on mobile */
+  }
+
+  /* Grids: collapse to single column; row gap = gap_within_parts-S */
+  .grid-6-6,
+  .grid-8-4,
+  .grid-7-5,
+  .grid-3-eq,
+  .grid-4-eq,
+  .grid-6-eq {
+    grid-template-columns: 1fr;
+    gap: var(--gap-within-s);
+  }
+
+  /* Text+image pairs collapse with gap-margin-p (smaller than gap-within-s) */
+  .grid-media {
+    grid-template-columns: 1fr;
+    gap: var(--gap-margin-p);
+  }
+
+  /* Text constraints: full width on mobile */
+  .text-col-8,
+  .text-col-6 {
+    max-width: 100%;
+  }
+
+}

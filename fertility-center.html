@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fertility Center — Jasmine Su</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/project.css">
+  <!-- Font Awesome for envelope + LinkedIn icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="site-header__logo">Jasmine Su</a>
+      <nav class="site-header__nav" id="main-nav" aria-label="Main navigation">
+        <!-- <a href="#">About</a> -->
+        <a href="https://www.linkedin.com/in/ting-hsuan-su/" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+      <button class="site-header__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== MAIN ===================== -->
+  <main class="project-main">
+    <div class="container">
+
+      <!-- ── PROJECT HEADER ── -->
+      <header class="project-header">
+
+        <!-- Title row -->
+        <div class="project-header__title-row">
+          <h1 class="project-header__h1">Fertility Center App+CMS</h1>
+          <p class="t4">Streamlining notification process for clinic staff and providing patients easy access to information and services</p>
+        </div>
+
+        <!-- Hero image -->
+        <div class="project-header__hero">
+          <img src="assets/images/fertility-center/fertility_hero.webp" alt="Fertility Center — Clinic App & CMS">
+        </div>
+
+        <!-- Info row -->
+        <div class="project-header__info">
+          <div class="project-info-item">
+            <p class="t5">Project</p>
+            <p class="body-text">Custom product design project for a confidential client of Spark Technologies Inc.</p>
+          </div>
+          <div class="project-info-item">
+            <p class="t5">My Contribution</p>
+            <p class="body-text">Product Design<br>UX Design<br>Design System</p>
+          </div>
+          <div class="project-info-item">
+            <p class="t5">Team</p>
+            <p class="body-text">1 Project Manager<br>1 Frontend Developer<br>1 Backend Developer<br>2 App Developers</p>
+          </div>
+          <div class="project-info-item">
+            <p class="t5">Timeline</p>
+            <p class="body-text">Nov – Dec 2021 (6 weeks)</p>
+          </div>
+        </div>
+
+      </header>
+
+      <hr class="divider" role="separator">
+
+      <!-- ══════════════════════════════════════════════
+           SECTION: Project Goal + Design Overview
+           ══════════════════════════════════════════════ -->
+      <section class="project-section" aria-label="Project Goal and Design Overview">
+
+        <!-- Project Goal -->
+        <div class="part">
+
+          <div class="section-title">
+            <p class="t5">Project Goal:</p>
+            <h2 class="t2">Improving patient outreach and information access</h2>
+          </div>
+
+          <div class="grid-6-6">
+            <p class="body-text">Our client was a fertility center supporting infertile parents. They aimed to improve communication with patients, who were contacted manually for appointment updates, payment reminders, and schedule changes. To streamline communication and provide easy access to information, the project aimed to develop a mobile app and its content management system (CMS) for real-time, transparent interactions between the clinic and patients.</p>
+            <div style="display: flex; gap: var(--col-gap);">
+              <div class="media-caption">
+                <img src="assets/images/fertility-center/fertility_cms_user.webp" alt="Clinic staff user" class="img-fluid">
+                <p class="media-caption__text">Clinic Staff: Need to notify patients more efficiently.</p>
+              </div>
+              <div class="media-caption">
+                <img src="assets/images/fertility-center/fertility_app_user.webp" alt="Patient user" class="img-fluid">
+                <p class="media-caption__text">Patients: Need easy access to various types of information.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Design Overview -->
+        <div class="part">
+
+          <div class="section-title">
+            <p class="t5">Design Overview:</p>
+            <h2 class="t2">Streamlining notification process and provide easy access to information and services</h2>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+            <p class="body-text">The CMS design streamlined notifications for clinic staff, while the mobile app provided patients with easy access to information and services, enhancing communication and efficiency at the fertility center. In this project, I designed a mobile app and the CMS end-to-end. I interviewed the stakeholders in the clinic, defined information architecture, and led the design of the whole system, including the design system and guideline.</p>
+            <div class="img-ratio" style="aspect-ratio: 1180/587;">
+              <img src="assets/images/fertility-center/fertility_design-overview.webp" alt="Design overview" class="img-fluid">
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <hr class="divider" role="separator">
+
+      <!-- ══════════════════════════════════════════════
+           SECTION: CMS Design
+           ══════════════════════════════════════════════ -->
+      <section class="project-section" aria-label="CMS Design">
+
+        <div class="section-title">
+          <p class="t5">CMS Design:</p>
+          <h2 class="t2">How might we send notifications for different scenarios efficiently?</h2>
+        </div>
+
+        <!-- User Archetype -->
+        <div class="grid-8-4">
+          <div class="part-text">
+            <div class="part-title">
+              <p class="t5">User Archetype:</p>
+              <h3 class="t3">The Busy Clinic Staff</h3>
+            </div>
+            <p class="body-text">The clinic staff had to make individual phone calls to notify each patient in various situations, which was very time-consuming. To streamline this process, we decided to enable them to send preset notifications directly through the CMS.</p>
+          </div>
+          <img src="assets/images/fertility-center/fertility_cms_user.webp" alt="Clinic staff user archetype" class="img-fluid">
+        </div>
+
+        <!-- User Research -->
+        <div class="part">
+          <div class="part-text text-col-8">
+            <div class="part-title">
+              <p class="t5">User Research:</p>
+              <h3 class="t3">Identifying the Common Scenarios for Sending Notifications</h3>
+            </div>
+            <p class="body-text">Through stakeholder interview, we identified several scenarios that the staff need to manually notify the patients:</p>
+          </div>
+          <div class="grid-6-6" style="align-items: start;">
+            <div class="h4-item">
+              <h4 class="t4">1. Appointment Management</h4>
+              <p class="body-text">Appointment order often deviates from registration numbers due to unforeseen circumstances. This leads to inaccurate wait time estimates for patients and requires staff to manually call each patient when it's their turn.</p>
+            </div>
+            <div class="h4-item">
+              <h4 class="t4">2. Payment Reminder</h4>
+              <p class="body-text">Some patients would forget to pay their annual embryo preservation fee, and the clinic staff need to remind them manually.</p>
+            </div>
+            <div class="h4-item">
+              <h4 class="t4">3. Blood Draw Schedule Changes</h4>
+              <p class="body-text">Sometimes, the clinic needs to change the blood draw schedule due to unforeseen circumstances.</p>
+            </div>
+            <div class="h4-item">
+              <h4 class="t4">4. Other</h4>
+              <p class="body-text">The clinic occasionally needs to notify patients about temporary changes in hours, special events, or other matters. These notifications are irregular and their content varies each time.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design Solution -->
+        <div class="part-lg">
+
+          <!-- Part-text + task analysis image -->
+          <div style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+            <div class="part-text text-col-8">
+              <div class="part-title">
+                <p class="t5">Design Solution:</p>
+                <h3 class="t3">Reducing the Staff's Effort in Notifying Patients</h3>
+              </div>
+              <p class="body-text">After identifying common scenarios for sending notifications, I mapped out user flows for each to find patterns and spot differences. I learned that filtering recipients was key to efficiency, and using preset messages could save time on typing.</p>
+            </div>
+            <div class="media-caption">
+              <img src="assets/images/fertility-center/fertility_cms_task-analysis.webp" alt="Task analysis for each scenario" class="img-fluid">
+              <p class="media-caption__text">Task analysis for each scenario</p>
+            </div>
+          </div>
+
+          <!-- Quick Switch Between Each Scenario -->
+          <div style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+            <div class="h4-item text-col-8">
+              <h4 class="t4">Quick Switch Between Each Scenario</h4>
+              <p class="body-text">Instead of manually filter recipients from the full patient list each time, I put quick links for each common scenarios in the side menu to streamline the process.</p>
+            </div>
+            <video class="project-video" autoplay muted loop playsinline>
+              <source src="assets/videos/fertility-center/fertility_cms_switch-scenario.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <!-- Notification Management -->
+          <div style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+            <div class="h4-item text-col-8">
+              <h4 class="t4">Notification Management</h4>
+              <p class="body-text">Clinic staff can send notifications by selecting recipients, choosing a preset message or typing a custom one, then clicking the "Send Notification" button. They can also view the notification history, check if recipients have read them, and filter unread notifications for easy resending.</p>
+            </div>
+            <img src="assets/images/fertility-center/fertility_cms_notification-list.webp" alt="Notification management interface" class="img-fluid">
+          </div>
+
+        </div>
+
+        <!-- Design Iteration -->
+        <div class="part-lg">
+
+          <!-- Part-text + tablet-keyboard video -->
+          <div style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+            <div class="part-text text-col-8">
+              <div class="part-title">
+                <p class="t5">Design Iteration:</p>
+                <h3 class="t3">Optimizing User Experience on Tablets</h3>
+              </div>
+              <p class="body-text">From the stakeholder interview, we learned that staff use tablets to manage online services, so we needed to ensure the onscreen keyboard wouldn't block critical content.</p>
+            </div>
+            <video class="project-video" autoplay muted loop playsinline>
+              <source src="assets/videos/fertility-center/fertility_cms_tablet-keyboard.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <!-- Body text + onscreen comparison image -->
+          <div style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+            <p class="body-text">During wireframing, I experimented with different layouts to maximize visible content when the keyboard appeared. Initially, the message area was fixed at the bottom of the page, which obscured the receiver list while typing. After several iterations, I moved both the receiver list and message area to the right sidebar, allowing more information to remain visible.</p>
+            <img src="assets/images/fertility-center/fertility_cms_onscreen-comparison.webp" alt="Onscreen keyboard layout comparison" class="img-fluid">
+          </div>
+
+        </div>
+
+      </section>
+
+      <hr class="divider" role="separator">
+
+      <!-- ══════════════════════════════════════════════
+           SECTION: App Design
+           ══════════════════════════════════════════════ -->
+      <section class="project-section" aria-label="App Design">
+
+        <div class="section-title">
+          <p class="t5">App Design:</p>
+          <h2 class="t2">How might we provide patients with easy access to various types of information and services?</h2>
+        </div>
+
+        <!-- User Archetype -->
+        <div class="grid-8-4">
+          <div class="part-text">
+            <div class="part-title">
+              <p class="t5">User Archetype:</p>
+              <h3 class="t3">Patients who Need Access to Various Types of Information and Services</h3>
+            </div>
+            <p class="body-text">Clinic patients need timely information, easy appointment booking, and access to their medical data. However, these functions are often scattered across websites, messaging apps, and phone calls, forcing patients to switch between platforms and making even simple tasks inefficient and frustrating.</p>
+          </div>
+          <img src="assets/images/fertility-center/fertility_app_user.webp" alt="Patient user archetype" class="img-fluid">
+        </div>
+
+        <!-- Design Solution -->
+        <div class="part-lg">
+
+          <div class="part-text">
+            <div class="part-title">
+              <p class="t5">Design Solution:</p>
+              <h3 class="t3">Clear &amp; Intuitive Access to Different Information</h3>
+            </div>
+          </div>
+
+          <!-- 6 features in a 2-column grid -->
+          <div class="grid-6-6" style="align-items: stretch; row-gap: var(--gap-within-l);">
+
+            <div class="col-media-bottom" style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+              <div class="h4-item">
+                <h4 class="t4">Making Appointments</h4>
+                <p class="body-text">Users can make appointments through the app. If they make appointments through phone or the clinic's website, their appointment information would also be displayed in the app.</p>
+              </div>
+              <video class="project-video" autoplay muted loop playsinline>
+                <source src="assets/videos/fertility-center/fertility_app_make-appointment.mp4" type="video/mp4">
+              </video>
+            </div>
+
+            <div class="col-media-bottom" style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+              <div class="h4-item">
+                <h4 class="t4">Appointment Management</h4>
+                <p class="body-text">Users can check the information of their appointments or cancel appointments through the app. Before going to the appointment, they can also track the real-time queue status.</p>
+              </div>
+              <video class="project-video" autoplay muted loop playsinline>
+                <source src="assets/videos/fertility-center/fertility_app_manage-appointment.mp4" type="video/mp4">
+              </video>
+            </div>
+
+            <div class="col-media-bottom" style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+              <div class="h4-item">
+                <h4 class="t4">Clinic Information</h4>
+                <p class="body-text">Users can find the information about clinic locations, doctors, and visiting hours.</p>
+              </div>
+              <video class="project-video" autoplay muted loop playsinline>
+                <source src="assets/videos/fertility-center/fertility_app_clinic-info.mp4" type="video/mp4">
+              </video>
+            </div>
+
+            <div class="col-media-bottom" style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+              <div class="h4-item">
+                <h4 class="t4">News &amp; Announcements</h4>
+                <p class="body-text">Users can be updated with the latest news and announcements of the fertility center on the app.</p>
+              </div>
+              <video class="project-video" autoplay muted loop playsinline>
+                <source src="assets/videos/fertility-center/fertility_app_news.mp4" type="video/mp4">
+              </video>
+            </div>
+
+            <div class="col-media-bottom" style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+              <div class="h4-item">
+                <h4 class="t4">Examination Report</h4>
+                <p class="body-text">Users can access to their examination report through the app.</p>
+              </div>
+              <video class="project-video" autoplay muted loop playsinline>
+                <source src="assets/videos/fertility-center/fertility_app_examination-report.mp4" type="video/mp4">
+              </video>
+            </div>
+
+            <div class="col-media-bottom" style="display: flex; flex-direction: column; gap: var(--gap-margin-p);">
+              <div class="h4-item">
+                <h4 class="t4">Notification List</h4>
+                <p class="body-text">Users can read the messages in the notification list.</p>
+              </div>
+              <video class="project-video" autoplay muted loop playsinline>
+                <source src="assets/videos/fertility-center/fertility_app_notification-list.mp4" type="video/mp4">
+              </video>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Design Approach -->
+        <div class="part">
+
+          <div class="part-text">
+            <div class="part-title">
+              <p class="t5">Design Approach:</p>
+              <h3 class="t3">Aligning Features with User Needs Through Visual Communication</h3>
+            </div>
+          </div>
+
+          <div class="grid-media">
+            <div class="h4-item">
+              <h4 class="t4">Structuring Features Around User Needs</h4>
+              <p class="body-text">To clearly understand user needs and priorities, I created a functional map to outline essential features and analyze tasks. This diagram facilitated discussions with the project manager about key functions, content, and data sources early in the process.</p>
+            </div>
+            <img src="assets/images/fertility-center/fertility_app_functional-map.webp" alt="Functional map" class="img-fluid">
+          </div>
+
+          <div class="grid-media">
+            <div class="h4-item">
+              <h4 class="t4">Visualizing User Flows for Cross-team Alignment</h4>
+              <p class="body-text">Next, I developed a simple UI flow to clarify user journeys and content mapping. The flowchart helped verify content with the client, while the project manager used it to discuss data sources with the app developers.</p>
+            </div>
+            <img src="assets/images/fertility-center/fertility_app_UI-flow.webp" alt="UI flow diagram" class="img-fluid">
+          </div>
+
+        </div>
+
+      </section>
+
+      <hr class="divider" role="separator">
+
+    </div><!-- /.container -->
+
+    <!-- ── PROJECT NAV ── -->
+    <nav class="project-nav container" aria-label="Project navigation">
+      <a href="aether.html" class="project-nav__btn project-nav__btn--prev">
+        <div class="project-nav__meta">
+          <span class="project-nav__label">Previous Project:</span>
+          <span class="project-nav__name">Aether</span>
+        </div>
+        <i class="project-nav__arrow fa-solid fa-arrow-left" aria-hidden="true"></i>
+      </a>
+      <a href="intelliride.html" class="project-nav__btn">
+        <div class="project-nav__meta">
+          <span class="project-nav__label">Next Project:</span>
+          <span class="project-nav__name">IntelliRide</span>
+        </div>
+        <i class="project-nav__arrow fa-solid fa-arrow-right" aria-hidden="true"></i>
+      </a>
+    </nav>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <p>Copyright &copy; <span id="footer-year"></span> Jasmine (Ting-Hsuan) Su</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
