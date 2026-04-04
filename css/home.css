@@ -36,8 +36,31 @@
   color: var(--color-text-normal);
 }
 
-.home-hero__subtitle {
+.home-hero__tagline {
+  padding-right: var(--col-gap);
+}
+
+.home-hero__bio {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   color: var(--color-text-normal);
+}
+
+.home-hero__bio-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.home-hero__bio-details p {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.home-hero__bio-details i {
+  font-size: 0.75em;
 }
 
 /* ============================================================
@@ -114,8 +137,8 @@
 
 .home-contact__item {
   display: flex;
-  align-items: center;
-  gap: var(--gap-margin-h5);   /* 8px */
+  align-items: baseline;
+  gap: 6px;
   color: var(--color-text-normal);
   text-decoration: none;
   transition: color 0.2s ease;
@@ -126,9 +149,7 @@
 }
 
 .home-contact__item i {
-  font-size: 1em;   /* matches the surrounding text size */
-  width: 1em;
-  text-align: center;
+  font-size: 0.85em;
   flex-shrink: 0;
 }
 

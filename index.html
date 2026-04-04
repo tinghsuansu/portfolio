@@ -18,8 +18,8 @@
     <div class="container">
       <a href="index.html" class="site-header__logo">Jasmine Su</a>
       <nav class="site-header__nav" id="main-nav" aria-label="Main navigation">
-        <!-- <a href="#">About</a> -->
-        <a href="https://www.linkedin.com/in/ting-hsuan-su/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="about.html">About</a>
+        <a href="https://www.linkedin.com/in/ting-hsuan-su/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
       </nav>
       <button class="site-header__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
         <i class="fa-solid fa-bars" aria-hidden="true"></i>
@@ -33,8 +33,16 @@
 
       <!-- Hero -->
       <section class="home-hero" aria-label="Introduction">
-        <h1 class="home-hero__title">Bridging Digital Experience with the Physical World; Bringing Ideas to Life</h1>
-        <p class="home-hero__subtitle t4">I'm a product designer with experience across automotive HMI, IoT, AI…and more!</p>
+        <div class="home-hero__tagline">
+          <h1 class="home-hero__title">Bridging Digital Experience with the Physical World;<br>Bringing Ideas to Life</h1>
+        </div>
+        <div class="home-hero__bio">
+          <p class="t4">Product designer with experience across automotive HMI, IoT, and enterprise software.</p>
+          <div class="home-hero__bio-details">
+            <p class="caption text-subtle"><i class="fa-solid fa-briefcase fa-fw" aria-hidden="true"></i>Currently designing future HMI at <strong>AUO</strong></p>
+            <p class="caption text-subtle"><i class="fa-solid fa-graduation-cap fa-fw" aria-hidden="true"></i>Master's at <strong>CMU MHCI</strong></p>
+          </div>
+        </div>
       </section>
 
       <!-- Project list -->
@@ -74,22 +82,6 @@
             </div>
           </a>
 
-          <!-- Fertility Center -->
-          <a href="fertility-center.html" class="project-card">
-            <div class="project-card__image">
-              <img src="assets/images/home/home_fertility.webp" alt="Fertility Center — Clinic App & CMS">
-            </div>
-            <div class="project-card__info">
-              <h2 class="t2">Fertility Center</h2>
-              <p class="t4">Clinic App &amp; CMS</p>
-              <p class="caption text-subtle">Improving patient communication and simplifying content management for clinic staff</p>
-            </div>
-            <div class="project-card__tags">
-              <span class="tag">Healthcare App</span>
-              <span class="tag">CMS</span>
-            </div>
-          </a>
-
           <!-- IntelliRide -->
           <a href="intelliride.html" class="project-card">
             <div class="project-card__image">
@@ -106,6 +98,22 @@
             </div>
           </a>
 
+          <!-- Fertility Center -->
+          <a href="fertility-center.html" class="project-card">
+            <div class="project-card__image">
+              <img src="assets/images/home/home_fertility.webp" alt="Fertility Center — Clinic App & CMS">
+            </div>
+            <div class="project-card__info">
+              <h2 class="t2">Fertility Center</h2>
+              <p class="t4">Clinic App &amp; CMS</p>
+              <p class="caption text-subtle">Improving patient communication and simplifying content management for clinic staff</p>
+            </div>
+            <div class="project-card__tags">
+              <span class="tag">Healthcare App</span>
+              <span class="tag">CMS</span>
+            </div>
+          </a>
+
         </div>
       </section>
 
@@ -117,12 +125,10 @@
         <h2 class="t2">Contact Me</h2>
         <div class="home-contact__info">
           <a href="mailto:jasminesu.design@gmail.com" class="home-contact__item body-text">
-            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-            jasminesu.design@gmail.com
+            <i class="fa-solid fa-envelope fa-fw" aria-hidden="true"></i>jasminesu.design@gmail.com
           </a>
           <a href="https://www.linkedin.com/in/ting-hsuan-su/" target="_blank" rel="noopener" class="home-contact__item body-text">
-            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
-            linkedin.com/ting-hsuan-su
+            <i class="fa-brands fa-linkedin-in fa-fw" aria-hidden="true"></i>linkedin.com/ting-hsuan-su
           </a>
         </div>
       </section>

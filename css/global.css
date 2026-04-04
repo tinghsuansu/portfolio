@@ -178,9 +178,10 @@ a {
 
 .site-header__logo {
   font-family: var(--font-title);
-  font-size: var(--fs-h3);
-  font-weight: 500;
-  line-height: normal;
+  font-size: var(--fs-h4);
+  font-weight: 600;
+  line-height: var(--lh-title);
+  letter-spacing: var(--ls-tight);
   color: var(--color-text-normal);
 }
 
@@ -191,17 +192,22 @@ a {
 }
 
 .site-header__nav a {
-  font-family: var(--font-content);
-  font-size: var(--fs-p);
-  font-weight: 400;
-  line-height: var(--lh-p);
-  letter-spacing: var(--ls-normal);
+  font-family: var(--font-title);
+  font-size: var(--fs-h5);
+  font-weight: 600;
+  line-height: var(--lh-title);
+  letter-spacing: var(--ls-tight);
   color: var(--color-text-subtle);
   transition: color 0.2s ease;
 }
 
 .site-header__nav a:hover {
   color: var(--color-text-normal);
+}
+
+.site-header__nav a[aria-label="LinkedIn"] i {
+  font-size: 28px;
+  line-height: 1;
 }
 
 /* Mobile: hamburger placeholder (JS controlled) */

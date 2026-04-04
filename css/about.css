@@ -1,0 +1,83 @@
+/* ============================================================
+   ABOUT PAGE STYLES
+   Depends on: variables.css, global.css
+   ============================================================ */
+
+.about-main .container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-between-sections);
+  padding-block: var(--gap-between-sections);
+}
+
+/* ============================================================
+   ABOUT ROW — 2-column layout
+   Default: 380px heading | 1fr content
+   ============================================================ */
+.about-row {
+  display: grid;
+  grid-template-columns: var(--col-4) 1fr;
+  gap: var(--col-gap);
+  align-items: start;
+}
+
+/* Contact variant: 1fr heading | 380px contact info */
+.about-row--contact {
+  grid-template-columns: 1fr var(--col-4);
+  align-items: center;
+}
+
+/* ============================================================
+   ROW BODY — content column
+   ============================================================ */
+.about-row__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-margin-p);
+}
+
+/* Contact links are closer together */
+.about-row--contact .about-row__body {
+  gap: var(--gap-margin-h5);
+}
+
+/* ============================================================
+   STRENGTH ITEMS — "I work well in..." list
+   ============================================================ */
+.about-strength {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-margin-h5);
+}
+
+/* ============================================================
+   CONTACT LINKS
+   ============================================================ */
+.about-contact__item {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  color: var(--color-text-normal);
+  transition: color 0.2s ease;
+}
+
+.about-contact__item:hover {
+  color: var(--color-text-subtle);
+}
+
+.about-contact__item i {
+  font-size: 0.85em;
+  flex-shrink: 0;
+}
+
+/* ============================================================
+   RESPONSIVE — Mobile (≤ 768px)
+   ============================================================ */
+@media (max-width: 768px) {
+
+  .about-row,
+  .about-row--contact {
+    grid-template-columns: 1fr;
+  }
+
+}
